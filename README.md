@@ -4,3 +4,5 @@
 1. OAuth 2.0 简介上（可不看）
 2. OAuth 2.0 简介下（可不看）
 3. OpenId Connect 简介（可不看）
+4. 搭建Identity Server 4服务器，Client Credentials授权实例
+5. Resource Owner Password Credentials授权实例
