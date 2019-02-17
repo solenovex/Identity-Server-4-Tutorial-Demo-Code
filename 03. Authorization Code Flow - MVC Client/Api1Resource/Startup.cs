@@ -26,7 +26,10 @@ namespace Api1Resource
                     options.RequireHttpsMetadata = false;
 
                     options.Audience = "api1";
+                    options.TokenValidationParameters.ClockSkew = TimeSpan.FromMinutes(1);
+                    options.TokenValidationParameters.RequireExpirationTime = true;
                 });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

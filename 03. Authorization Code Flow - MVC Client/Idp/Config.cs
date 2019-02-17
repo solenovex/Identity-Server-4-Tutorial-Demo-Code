@@ -79,10 +79,11 @@ namespace Idp
                     FrontChannelLogoutUri = "http://localhost:5002/signout-oidc",
                     PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
                     
-
                     AlwaysIncludeUserClaimsInIdToken = true,
 
                     AllowOfflineAccess = true, // offline_access
+                    AccessTokenLifetime = 60, // 60 seconds
+
                     AllowedScopes =
                     {
                         "api1",
