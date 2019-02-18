@@ -9,3 +9,4 @@
 1. 搭建Identity Server 4服务器，Client Credentials Grant 实例
 2. Resource Owner Password Credentials Grant 实例
 3. Authorization Code Flow 实例
+4. 刷新 Access Token (MVC Client)
