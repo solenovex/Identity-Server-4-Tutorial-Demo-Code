@@ -70,8 +70,15 @@ namespace Idp
                     // register your IdentityServer with Google at https://console.developers.google.com
                     // enable the Google+ API
                     // set the redirect URI to http://localhost:5000/signin-google
-                    options.ClientId = "copy client ID from Google here";
-                    options.ClientSecret = "copy client secret from Google here";
+                    options.ClientId = "595873797569-9i0e754m88g3j7mghqtk5ffppt56aiu8.apps.googleusercontent.com";
+                    options.ClientSecret = "a2GBrAv2vjlNytnOnOIHVEl1";
+                })
+                .AddGitHub(options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+                    options.ClientId = "5b0cdc644afcd8d3e757";
+                    options.ClientSecret = "a86c1eeae7e73e28c13441d77f2a73c0f5fe6261";
+                    options.Scope.Add("user:email");
                 });
         }
 

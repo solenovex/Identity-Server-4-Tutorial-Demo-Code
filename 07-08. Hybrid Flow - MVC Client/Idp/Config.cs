@@ -30,6 +30,9 @@ namespace Idp
             return new ApiResource[]
             {
                 new ApiResource("api1", "My API #1", new List<string> { "location" })
+                {
+                    ApiSecrets = { new Secret("api1 secret".Sha256()) }
+                }
             };
         }
 
@@ -144,6 +147,8 @@ namespace Idp
                     ClientSecrets = {new Secret("hybrid secret".Sha256()) },
 
                     AllowedGrantTypes = GrantTypes.Hybrid,
+
+                    AccessTokenType = AccessTokenType.Reference,
 
                     RedirectUris =
                     {

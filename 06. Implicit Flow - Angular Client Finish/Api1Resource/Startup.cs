@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -23,14 +24,21 @@ namespace Api1Resource
             .AddAuthorization()
             .AddJsonFormatters();
 
-            services.AddAuthentication("Bearer")
-                .AddJwtBearer("Bearer", options =>
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                .AddIdentityServerAuthentication(options =>
                 {
                     options.Authority = "http://localhost:5000";
+                    options.ApiName = "api1";
                     options.RequireHttpsMetadata = false;
-
-                    options.Audience = "api1";
+                    options.ApiSecret = "api1 secret";
                 });
+                //.AddJwtBearer("Bearer", options =>
+                //{
+                //    options.Authority = "http://localhost:5000";
+                //    options.RequireHttpsMetadata = false;
+
+                //    options.Audience = "api1";
+                //});
 
             services.AddMemoryCache();
 
