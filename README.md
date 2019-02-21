@@ -13,4 +13,5 @@
 5. 建立 Angular 客户端（Angular 7, Angular Material, Angular CLI）
 6. Implicit Flow 实例
 7. Hybrid Flow 实例，Claims映射，基于角色的授权和基于策略的授权
-8. Github 登录，Google 登录；单点登录（跨技术栈Python Flask，Nodejs Express之类的...明天再说...不一定会写）
+8. Refrence Token，撤销Tokens，Google和Github登录
+9. 单点登录实例（跨技术栈Python Flask，Nodejs Express之类的...明天再说...不一定会写）
