@@ -4,6 +4,7 @@
 
 using IdentityServer4.Models;
 using System.Collections.Generic;
+using IdentityModel;
 using IdentityServer4;
 
 namespace Idp
@@ -18,7 +19,9 @@ namespace Idp
                 new IdentityResources.Profile(),
                 new IdentityResources.Address(),
                 new IdentityResources.Phone(),
-                new IdentityResources.Email()
+                new IdentityResources.Email(),
+                new IdentityResource("roles", "角色", new List<string> { JwtClaimTypes.Role }),
+                new IdentityResource("locations", "地点", new List<string> { "location" }), 
             };
         }
 
@@ -26,7 +29,7 @@ namespace Idp
         {
             return new ApiResource[]
             {
-                new ApiResource("api1", "My API #1")
+                new ApiResource("api1", "My API #1", new List<string> { "location" })
             };
         }
 
@@ -154,7 +157,7 @@ namespace Idp
 
                     AllowOfflineAccess = true,
 
-                    AlwaysIncludeUserClaimsInIdToken = false,
+                    AlwaysIncludeUserClaimsInIdToken = true,
 
                     AllowedScopes =
                     {
@@ -163,7 +166,9 @@ namespace Idp
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.Address,
                         IdentityServerConstants.StandardScopes.Phone,
-                        IdentityServerConstants.StandardScopes.Profile
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "roles",
+                        "locations"
                     }
                 }
             };
