@@ -31,7 +31,7 @@ def hello_world():
 @oidc.require_login
 def hello_me():
     info = oidc.user_getinfo(['email', 'openid_id', 'name', 'preferred_username'])
-    return ('Hello, %s (%s)! Visit <a href="http://localhost:5002">MVC Client</a> and <a href="http://localhost:7000">Hybrid Client</a> and <a href="http://localhost:4200">Angular Client</a>, <a href="/">Return</a>' %
+    return ('Hello, %s (%s)! Visit <a href="http://localhost:7001">MVC Client</a> and <a href="http://localhost:7000">Hybrid Client</a> and <a href="http://localhost:4200">Angular Client</a>, <a href="/">Return</a>' %
             (info.get('name'), info.get('preferred_username')))
 
 

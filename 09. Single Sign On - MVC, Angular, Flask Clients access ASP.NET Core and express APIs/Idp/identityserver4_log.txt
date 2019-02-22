@@ -15466,3 +15466,707 @@
 2019-02-22 13:57:03.867 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
 2019-02-22 13:57:03.870 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2019-02-22 13:57:03.872 +08:00 [DBG] Start key discovery request
+2019-02-22 18:38:10.270 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-02-22 18:38:10.306 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-02-22 18:38:10.310 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-02-22 18:38:10.310 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-02-22 18:38:10.310 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-02-22 18:38:10.310 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-02-22 18:38:10.310 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-02-22 18:40:42.893 +08:00 [DBG] Login Url: /Account/Login
+2019-02-22 18:40:42.895 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 18:40:42.895 +08:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 18:40:42.895 +08:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 18:40:42.895 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 18:40:42.895 +08:00 [DBG] Error Url: /home/error
+2019-02-22 18:40:42.895 +08:00 [DBG] Error Id Parameter: errorId
+2019-02-22 18:40:42.917 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 18:40:42.923 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 18:40:42.924 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 18:40:42.928 +08:00 [DBG] Start authorize request
+2019-02-22 18:40:42.962 +08:00 [DBG] No user present in authorize request
+2019-02-22 18:40:42.966 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:40:42.983 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:42.988 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 18:40:42.989 +08:00 [DBG] No PKCE used.
+2019-02-22 18:40:43.029 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:40:43.052 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"flask client","ClientName":"Flask 客户端","RedirectUri":"http://localhost:7002/oidc_callback","AllowedRedirectUris":["http://localhost:7002/oidc_callback"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid email profile api1","State":"eyJjc3JmX3Rva2VuIjogIlVSMW9LZm02Wm9nZlFLaFZGMTNNVDJ1Tmk2RktUTmNQIiwgImRlc3RpbmF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUo5LkltaDBkSEE2THk5c2IyTmhiR2h2YzNRNk56QXdNaTl3Y21sMllYUmxJZy5JTjFwc0VnaTY3eHZ0N25tRVhOc3ZRNHJtZjF4R0ZrVXhQdVhXV3VTYm1ZIn0=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"flask client","redirect_uri":"http://localhost:7002/oidc_callback","scope":"openid email profile api1","access_type":"offline","response_type":"code","state":"eyJjc3JmX3Rva2VuIjogIlVSMW9LZm02Wm9nZlFLaFZGMTNNVDJ1Tmk2RktUTmNQIiwgImRlc3RpbmF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUo5LkltaDBkSEE2THk5c2IyTmhiR2h2YzNRNk56QXdNaTl3Y21sMllYUmxJZy5JTjFwc0VnaTY3eHZ0N25tRVhOc3ZRNHJtZjF4R0ZrVXhQdVhXV3VTYm1ZIn0="},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 18:40:43.074 +08:00 [INF] Showing login: User is not authenticated
+2019-02-22 18:40:43.547 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:40:43.548 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:43.548 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 18:40:43.548 +08:00 [DBG] No PKCE used.
+2019-02-22 18:40:43.548 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:40:43.550 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:51.180 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-22 18:40:51.251 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:40:51.252 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:51.252 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 18:40:51.252 +08:00 [DBG] No PKCE used.
+2019-02-22 18:40:51.252 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:40:51.262 +08:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"88421113","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKOM8OTJ3Q5:00000003","TimeStamp":"2019-02-22T10:40:51.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-22 18:40:51.279 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 18:40:51.281 +08:00 [DBG] Adding idp claim with value: local
+2019-02-22 18:40:51.281 +08:00 [DBG] Adding amr claim with value: pwd
+2019-02-22 18:40:51.290 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 18:40:51.292 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:51.297 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-02-22 18:40:51.297 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-02-22 18:40:51.298 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-02-22 18:40:51.304 +08:00 [DBG] Start authorize callback request
+2019-02-22 18:40:51.308 +08:00 [DBG] User in authorize request: 88421113
+2019-02-22 18:40:51.308 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:40:51.308 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:51.308 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 18:40:51.308 +08:00 [DBG] No PKCE used.
+2019-02-22 18:40:51.308 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:40:51.308 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"flask client","ClientName":"Flask 客户端","RedirectUri":"http://localhost:7002/oidc_callback","AllowedRedirectUris":["http://localhost:7002/oidc_callback"],"SubjectId":"88421113","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid email profile api1","State":"eyJjc3JmX3Rva2VuIjogIlVSMW9LZm02Wm9nZlFLaFZGMTNNVDJ1Tmk2RktUTmNQIiwgImRlc3RpbmF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUo5LkltaDBkSEE2THk5c2IyTmhiR2h2YzNRNk56QXdNaTl3Y21sMllYUmxJZy5JTjFwc0VnaTY3eHZ0N25tRVhOc3ZRNHJtZjF4R0ZrVXhQdVhXV3VTYm1ZIn0=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"26779630ffc88a33d4ba63b5e615a242","Raw":{"client_id":"flask client","redirect_uri":"http://localhost:7002/oidc_callback","scope":"openid email profile api1","access_type":"offline","response_type":"code","state":"eyJjc3JmX3Rva2VuIjogIlVSMW9LZm02Wm9nZlFLaFZGMTNNVDJ1Tmk2RktUTmNQIiwgImRlc3RpbmF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUo5LkltaDBkSEE2THk5c2IyTmhiR2h2YzNRNk56QXdNaTl3Y21sMllYUmxJZy5JTjFwc0VnaTY3eHZ0N25tRVhOc3ZRNHJtZjF4R0ZrVXhQdVhXV3VTYm1ZIn0="},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 18:40:51.309 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-02-22 18:40:51.318 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2019-02-22 18:40:51.322 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-02-22 18:40:51.355 +08:00 [INF] {"ClientId":"flask client","ClientName":"Flask 客户端","RedirectUri":"http://localhost:7002/oidc_callback","Endpoint":"Authorize","SubjectId":"88421113","Scopes":"openid email profile api1","GrantType":"authorization_code","Tokens":[{"TokenType":"code","TokenValue":"****8963","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3Q5:00000004","TimeStamp":"2019-02-22T10:40:51.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:40:51.356 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"88421113","ClientId":"flask client","RedirectUri":"http://localhost:7002/oidc_callback","State":"eyJjc3JmX3Rva2VuIjogIlVSMW9LZm02Wm9nZlFLaFZGMTNNVDJ1Tmk2RktUTmNQIiwgImRlc3RpbmF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUo5LkltaDBkSEE2THk5c2IyTmhiR2h2YzNRNk56QXdNaTl3Y21sMllYUmxJZy5JTjFwc0VnaTY3eHZ0N25tRVhOc3ZRNHJtZjF4R0ZrVXhQdVhXV3VTYm1ZIn0=","Scope":"openid email profile api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-02-22 18:40:51.374 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 18:40:51.374 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 18:40:51.385 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-02-22 18:40:51.390 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-02-22 18:40:51.390 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-02-22 18:40:51.397 +08:00 [DBG] Start token request.
+2019-02-22 18:40:51.405 +08:00 [DBG] Start client validation
+2019-02-22 18:40:51.410 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 18:40:51.413 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 18:40:51.413 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 18:40:51.413 +08:00 [DBG] Secret id found: flask client
+2019-02-22 18:40:51.413 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:51.423 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 18:40:51.423 +08:00 [DBG] Client validation success
+2019-02-22 18:40:51.423 +08:00 [INF] {"ClientId":"flask client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLKOM8OTJ3Q7:00000001","TimeStamp":"2019-02-22T10:40:51.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-02-22 18:40:51.433 +08:00 [DBG] Start token request validation
+2019-02-22 18:40:51.445 +08:00 [DBG] Start validation of authorization code token request
+2019-02-22 18:40:51.461 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-02-22 18:40:51.461 +08:00 [DBG] Validation of authorization code token request success
+2019-02-22 18:40:51.462 +08:00 [INF] Token request validation success
+{"ClientId":"flask client","ClientName":"Flask 客户端","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"d11c4994df28d28ef121584f07c7b971c6efc1cde2ff08e8e48dccdbb0538963","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"flask client","code":"d11c4994df28d28ef121584f07c7b971c6efc1cde2ff08e8e48dccdbb0538963","scope":"openid email profile api1","client_secret":"***REDACTED***","grant_type":"authorization_code","redirect_uri":"http://localhost:7002/oidc_callback"},"$type":"TokenRequestValidationLog"}
+2019-02-22 18:40:51.479 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:51.490 +08:00 [DBG] Getting claims for access token for client: flask client
+2019-02-22 18:40:51.490 +08:00 [DBG] Getting claims for access token for subject: 88421113
+2019-02-22 18:40:51.494 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["location"] via ClaimsProviderAccessToken
+2019-02-22 18:40:51.497 +08:00 [DBG] Issued claims: ["location"]
+2019-02-22 18:40:51.569 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:51.578 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: flask client
+2019-02-22 18:40:51.578 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-02-22 18:40:51.582 +08:00 [INF] {"ClientId":"flask client","ClientName":"Flask 客户端","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid email profile api1","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****zCcg","$type":"Token"},{"TokenType":"access_token","TokenValue":"****Ik5w","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3Q7:00000001","TimeStamp":"2019-02-22T10:40:51.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:40:51.583 +08:00 [DBG] Token request success.
+2019-02-22 18:40:51.919 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:40:51.920 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:40:51.920 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:40:51.925 +08:00 [DBG] Start userinfo request
+2019-02-22 18:40:51.928 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:40:51.996 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:51.999 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:40:52.000 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:40:52.000 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:40:52.002 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832051,"exp":1550835651,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:40:52.003 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:40:52.009 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:40:52.012 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:40:52.014 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:40:52.017 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:40:52.017 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:40:52.017 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:40:52.017 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:40:52.017 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:40:52.017 +08:00 [DBG] End userinfo request
+2019-02-22 18:43:37.459 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:43:37.459 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:43:37.459 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:43:37.460 +08:00 [DBG] Start userinfo request
+2019-02-22 18:43:37.460 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:43:37.462 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:43:37.462 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:43:37.462 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:43:37.462 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:43:37.462 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832051,"exp":1550835651,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:43:37.462 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:43:37.462 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:43:37.462 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:43:37.462 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:43:37.463 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:43:37.463 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:43:37.463 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:43:37.463 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:43:37.463 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:43:37.463 +08:00 [DBG] End userinfo request
+2019-02-22 18:44:01.772 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:44:01.772 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:44:01.772 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:44:01.772 +08:00 [DBG] Start userinfo request
+2019-02-22 18:44:01.772 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:44:01.774 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:44:01.774 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:44:01.774 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:44:01.774 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:44:01.774 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832051,"exp":1550835651,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:44:01.774 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:44:01.774 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:44:01.774 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:44:01.774 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:44:01.774 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:44:01.774 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:44:01.774 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:44:01.775 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:44:01.775 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:44:01.775 +08:00 [DBG] End userinfo request
+2019-02-22 18:44:04.650 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:44:04.650 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:44:04.651 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:44:04.651 +08:00 [DBG] Start userinfo request
+2019-02-22 18:44:04.651 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:44:04.652 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:44:04.652 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:44:04.652 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:44:04.653 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:44:04.653 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832051,"exp":1550835651,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:44:04.653 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:44:04.653 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:44:04.653 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:44:04.653 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:44:04.653 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:44:04.653 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:44:04.653 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:44:04.653 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:44:04.653 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:44:04.654 +08:00 [DBG] End userinfo request
+2019-02-22 18:44:42.516 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:44:42.526 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:44:42.526 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:44:42.531 +08:00 [DBG] Start discovery request
+2019-02-22 18:44:42.630 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:44:42.631 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:44:42.631 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:44:42.634 +08:00 [DBG] Start key discovery request
+2019-02-22 18:44:42.690 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 18:44:42.690 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 18:44:42.691 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 18:44:42.691 +08:00 [DBG] Start authorize request
+2019-02-22 18:44:42.691 +08:00 [DBG] User in authorize request: 88421113
+2019-02-22 18:44:42.691 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:44:42.691 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 18:44:42.691 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 18:44:42.691 +08:00 [DBG] No PKCE used.
+2019-02-22 18:44:42.693 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:44:42.693 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","AllowedRedirectUris":["http://localhost:7001/signin-oidc"],"SubjectId":"88421113","ResponseType":"code","ResponseMode":"form_post","GrantType":"authorization_code","RequestedScopes":"api1 api2 openid profile email phone address offline_access","State":"CfDJ8PPRh7dM_X9Poiy0585yn7TYqsITOQ55hmIFgfBlOSwMK-0drcaWe8_IPfxwcj8TXrXKnehwWlZaXQwlN11Ir-z-lnnWuUcIJQxNM7JVMh4J8MBQ-TYIDwqZLJROxpN0t3mk3kagZdAoXS3cgew28HzDh8fkeLqaZe4Ug3cpkkTK6OiQCLbTIyPZfWU7sj_WZ_DuAM1xLQg1t_H_RxViectyGvJ8nZ5P6qlgfaNGxSqp9zofCg1eKJtCFuh3K-qsMvED8PHe1Xt-P2ZmzSH5-AexV5ZwQt_hDKpG_dVvyrpbS_VP6tQZWpyaxazIPzxOUg","UiLocales":null,"Nonce":"636864290826591445.MzdlNWY4MmEtNzkzNC00ZWI1LWIxMjgtNjY3YzBlNzRhMGExMzBhMGQ3OGEtY2M2NC00NWU4LWFiNTUtNDhjMWEzOWJlMjIy","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"26779630ffc88a33d4ba63b5e615a242","Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7001/signin-oidc","response_type":"code","scope":"api1 api2 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864290826591445.MzdlNWY4MmEtNzkzNC00ZWI1LWIxMjgtNjY3YzBlNzRhMGExMzBhMGQ3OGEtY2M2NC00NWU4LWFiNTUtNDhjMWEzOWJlMjIy","state":"CfDJ8PPRh7dM_X9Poiy0585yn7TYqsITOQ55hmIFgfBlOSwMK-0drcaWe8_IPfxwcj8TXrXKnehwWlZaXQwlN11Ir-z-lnnWuUcIJQxNM7JVMh4J8MBQ-TYIDwqZLJROxpN0t3mk3kagZdAoXS3cgew28HzDh8fkeLqaZe4Ug3cpkkTK6OiQCLbTIyPZfWU7sj_WZ_DuAM1xLQg1t_H_RxViectyGvJ8nZ5P6qlgfaNGxSqp9zofCg1eKJtCFuh3K-qsMvED8PHe1Xt-P2ZmzSH5-AexV5ZwQt_hDKpG_dVvyrpbS_VP6tQZWpyaxazIPzxOUg","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 18:44:42.693 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-02-22 18:44:42.693 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2019-02-22 18:44:42.693 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-02-22 18:44:42.704 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","Endpoint":"Authorize","SubjectId":"88421113","Scopes":"openid profile email phone address api1 api2 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"code","TokenValue":"****95c7","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QD:00000001","TimeStamp":"2019-02-22T10:44:42.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:44:42.704 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"88421113","ClientId":"mvc client","RedirectUri":"http://localhost:7001/signin-oidc","State":"CfDJ8PPRh7dM_X9Poiy0585yn7TYqsITOQ55hmIFgfBlOSwMK-0drcaWe8_IPfxwcj8TXrXKnehwWlZaXQwlN11Ir-z-lnnWuUcIJQxNM7JVMh4J8MBQ-TYIDwqZLJROxpN0t3mk3kagZdAoXS3cgew28HzDh8fkeLqaZe4Ug3cpkkTK6OiQCLbTIyPZfWU7sj_WZ_DuAM1xLQg1t_H_RxViectyGvJ8nZ5P6qlgfaNGxSqp9zofCg1eKJtCFuh3K-qsMvED8PHe1Xt-P2ZmzSH5-AexV5ZwQt_hDKpG_dVvyrpbS_VP6tQZWpyaxazIPzxOUg","Scope":"openid profile email phone address api1 api2 offline_access","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-02-22 18:44:42.705 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 18:44:42.706 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 18:44:42.815 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-02-22 18:44:42.815 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-02-22 18:44:42.815 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-02-22 18:44:42.815 +08:00 [DBG] Start token request.
+2019-02-22 18:44:42.815 +08:00 [DBG] Start client validation
+2019-02-22 18:44:42.815 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 18:44:42.815 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 18:44:42.815 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 18:44:42.816 +08:00 [DBG] Secret id found: mvc client
+2019-02-22 18:44:42.816 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 18:44:42.816 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 18:44:42.816 +08:00 [DBG] Client validation success
+2019-02-22 18:44:42.816 +08:00 [INF] {"ClientId":"mvc client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLKOM8OTJ3QC:00000003","TimeStamp":"2019-02-22T10:44:42.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-02-22 18:44:42.816 +08:00 [DBG] Start token request validation
+2019-02-22 18:44:42.816 +08:00 [DBG] Start validation of authorization code token request
+2019-02-22 18:44:42.828 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-02-22 18:44:42.828 +08:00 [DBG] Validation of authorization code token request success
+2019-02-22 18:44:42.828 +08:00 [INF] Token request validation success
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"37fd7542e407e8e77bb3274f9a2c501a212dd63e585c2d01d76a5088cee095c7","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"mvc client","client_secret":"***REDACTED***","code":"37fd7542e407e8e77bb3274f9a2c501a212dd63e585c2d01d76a5088cee095c7","grant_type":"authorization_code","redirect_uri":"http://localhost:7001/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-02-22 18:44:42.828 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 18:44:42.828 +08:00 [DBG] Getting claims for access token for client: mvc client
+2019-02-22 18:44:42.829 +08:00 [DBG] Getting claims for access token for subject: 88421113
+2019-02-22 18:44:42.829 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["location"] via ClaimsProviderAccessToken
+2019-02-22 18:44:42.829 +08:00 [DBG] Issued claims: ["location"]
+2019-02-22 18:44:42.836 +08:00 [DBG] Creating refresh token
+2019-02-22 18:44:42.836 +08:00 [DBG] Setting an absolute lifetime: 2592000
+2019-02-22 18:44:42.848 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 18:44:42.848 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: mvc client
+2019-02-22 18:44:42.848 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","phone_number","phone_number_verified","email","email_verified"] via ClaimsProviderIdentityToken
+2019-02-22 18:44:42.848 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-02-22 18:44:42.852 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile email phone address api1 api2 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****AWfw","$type":"Token"},{"TokenType":"refresh_token","TokenValue":"****f56f","$type":"Token"},{"TokenType":"access_token","TokenValue":"****I8Ow","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QC:00000003","TimeStamp":"2019-02-22T10:44:42.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:44:42.852 +08:00 [DBG] Token request success.
+2019-02-22 18:44:42.941 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:44:42.941 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:44:42.942 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:44:42.942 +08:00 [DBG] Start discovery request
+2019-02-22 18:44:42.950 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:44:42.950 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:44:42.950 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:44:42.950 +08:00 [DBG] Start key discovery request
+2019-02-22 18:44:43.036 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:44:43.036 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:44:43.036 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:44:43.036 +08:00 [DBG] Start discovery request
+2019-02-22 18:44:43.109 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:44:43.109 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:44:43.110 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:44:43.110 +08:00 [DBG] Start key discovery request
+2019-02-22 18:45:20.964 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:45:20.964 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:45:20.964 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:45:20.964 +08:00 [DBG] Start key discovery request
+2019-02-22 18:45:30.587 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:45:30.587 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:45:30.587 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:45:30.587 +08:00 [DBG] Start discovery request
+2019-02-22 18:45:30.588 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:45:30.588 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:45:30.588 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:45:30.589 +08:00 [DBG] Start key discovery request
+2019-02-22 18:45:45.284 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:45:45.285 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:45:45.285 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:45:45.285 +08:00 [DBG] Start discovery request
+2019-02-22 18:45:45.355 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:45:45.355 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:45:45.355 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:45:45.355 +08:00 [DBG] Start key discovery request
+2019-02-22 18:45:45.405 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 18:45:45.405 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 18:45:45.405 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 18:45:45.405 +08:00 [DBG] Start authorize request
+2019-02-22 18:45:45.405 +08:00 [DBG] User in authorize request: 88421113
+2019-02-22 18:45:45.405 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:45:45.405 +08:00 [DBG] client configuration validation for client hybrid client succeeded.
+2019-02-22 18:45:45.405 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 18:45:45.405 +08:00 [DBG] No PKCE used.
+2019-02-22 18:45:45.406 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:45:45.406 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"hybrid client","ClientName":"ASP.NET Core Hybrid 客户端","RedirectUri":"http://localhost:7000/signin-oidc","AllowedRedirectUris":["http://localhost:7000/signin-oidc"],"SubjectId":"88421113","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"api1 openid profile email phone address roles locations offline_access","State":"CfDJ8PPRh7dM_X9Poiy0585yn7RB9eMequBTLM19d84oqqqxiXP0puguyS0IiS8rULMv-N_oO1IaG3ddhO7NgoAo69KTWb4WfpuCVNnxmkoF-Cqx1Tf-E4lF0qKg0tvHEhtu3AVhp_OLfN7RNZiIOdOopQuE4Qi1NBXNuk4QBsLevj5VMVWjv-9Y-Orkho22vXjl9v9us7LIPMOtWxlmELzBpwCrDUxoC6PTI5gL1CRFaN93xQUQ7f2eVk25d3T-CySyBr1vtqMOMG5_ZdYjh0mGvxF8QO_zoFr97Y2FExiCwksMHppkd1Duhm3ghp8akyLKUN84HbaUpb7Dt0T2J3XI7Yw","UiLocales":null,"Nonce":"636864291453734142.ZDk5ZWVmOWItYmEwNC00NDkyLThiMmEtYjZkZTBhMTk1N2NmM2RiYzExYzAtYTc0OS00Nzc5LWFiZDQtODlkNzkzYTk3ZWYx","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"26779630ffc88a33d4ba63b5e615a242","Raw":{"client_id":"hybrid client","redirect_uri":"http://localhost:7000/signin-oidc","response_type":"code id_token","scope":"api1 openid profile email phone address roles locations offline_access","response_mode":"form_post","nonce":"636864291453734142.ZDk5ZWVmOWItYmEwNC00NDkyLThiMmEtYjZkZTBhMTk1N2NmM2RiYzExYzAtYTc0OS00Nzc5LWFiZDQtODlkNzkzYTk3ZWYx","state":"CfDJ8PPRh7dM_X9Poiy0585yn7RB9eMequBTLM19d84oqqqxiXP0puguyS0IiS8rULMv-N_oO1IaG3ddhO7NgoAo69KTWb4WfpuCVNnxmkoF-Cqx1Tf-E4lF0qKg0tvHEhtu3AVhp_OLfN7RNZiIOdOopQuE4Qi1NBXNuk4QBsLevj5VMVWjv-9Y-Orkho22vXjl9v9us7LIPMOtWxlmELzBpwCrDUxoC6PTI5gL1CRFaN93xQUQ7f2eVk25d3T-CySyBr1vtqMOMG5_ZdYjh0mGvxF8QO_zoFr97Y2FExiCwksMHppkd1Duhm3ghp8akyLKUN84HbaUpb7Dt0T2J3XI7Yw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 18:45:45.406 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-02-22 18:45:45.406 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2019-02-22 18:45:45.409 +08:00 [DBG] Creating Hybrid Flow response.
+2019-02-22 18:45:45.421 +08:00 [DBG] Creating Implicit Flow response.
+2019-02-22 18:45:45.421 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: hybrid client
+2019-02-22 18:45:45.421 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core Hybrid 客户端 with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified","phone_number","phone_number_verified","address","role","location"] via ClaimsProviderIdentityToken
+2019-02-22 18:45:45.421 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address","location","role"]
+2019-02-22 18:45:45.424 +08:00 [INF] {"ClientId":"hybrid client","ClientName":"ASP.NET Core Hybrid 客户端","RedirectUri":"http://localhost:7000/signin-oidc","Endpoint":"Authorize","SubjectId":"88421113","Scopes":"openid profile email phone address roles locations api1 offline_access","GrantType":"hybrid","Tokens":[{"TokenType":"id_token","TokenValue":"****2HaA","$type":"Token"},{"TokenType":"code","TokenValue":"****ed6b","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QD:00000002","TimeStamp":"2019-02-22T10:45:45.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:45:45.424 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"88421113","ClientId":"hybrid client","RedirectUri":"http://localhost:7000/signin-oidc","State":"CfDJ8PPRh7dM_X9Poiy0585yn7RB9eMequBTLM19d84oqqqxiXP0puguyS0IiS8rULMv-N_oO1IaG3ddhO7NgoAo69KTWb4WfpuCVNnxmkoF-Cqx1Tf-E4lF0qKg0tvHEhtu3AVhp_OLfN7RNZiIOdOopQuE4Qi1NBXNuk4QBsLevj5VMVWjv-9Y-Orkho22vXjl9v9us7LIPMOtWxlmELzBpwCrDUxoC6PTI5gL1CRFaN93xQUQ7f2eVk25d3T-CySyBr1vtqMOMG5_ZdYjh0mGvxF8QO_zoFr97Y2FExiCwksMHppkd1Duhm3ghp8akyLKUN84HbaUpb7Dt0T2J3XI7Yw","Scope":"openid profile email phone address roles locations api1 offline_access","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-02-22 18:45:45.424 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 18:45:45.424 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 18:45:45.546 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-02-22 18:45:45.546 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-02-22 18:45:45.546 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-02-22 18:45:45.546 +08:00 [DBG] Start token request.
+2019-02-22 18:45:45.546 +08:00 [DBG] Start client validation
+2019-02-22 18:45:45.546 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 18:45:45.546 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 18:45:45.546 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 18:45:45.546 +08:00 [DBG] Secret id found: hybrid client
+2019-02-22 18:45:45.547 +08:00 [DBG] client configuration validation for client hybrid client succeeded.
+2019-02-22 18:45:45.547 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 18:45:45.547 +08:00 [DBG] Client validation success
+2019-02-22 18:45:45.547 +08:00 [INF] {"ClientId":"hybrid client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLKOM8OTJ3QI:00000003","TimeStamp":"2019-02-22T10:45:45.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-02-22 18:45:45.547 +08:00 [DBG] Start token request validation
+2019-02-22 18:45:45.547 +08:00 [DBG] Start validation of authorization code token request
+2019-02-22 18:45:45.557 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-02-22 18:45:45.557 +08:00 [DBG] Validation of authorization code token request success
+2019-02-22 18:45:45.557 +08:00 [INF] Token request validation success
+{"ClientId":"hybrid client","ClientName":"ASP.NET Core Hybrid 客户端","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"49522fe32c00687a532ff4672afafb9d8747f80576842f616eb264d892cbed6b","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"hybrid client","client_secret":"***REDACTED***","code":"49522fe32c00687a532ff4672afafb9d8747f80576842f616eb264d892cbed6b","grant_type":"authorization_code","redirect_uri":"http://localhost:7000/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-02-22 18:45:45.557 +08:00 [DBG] client configuration validation for client hybrid client succeeded.
+2019-02-22 18:45:45.557 +08:00 [DBG] Getting claims for access token for client: hybrid client
+2019-02-22 18:45:45.557 +08:00 [DBG] Getting claims for access token for subject: 88421113
+2019-02-22 18:45:45.557 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core Hybrid 客户端 with claim types ["location"] via ClaimsProviderAccessToken
+2019-02-22 18:45:45.557 +08:00 [DBG] Issued claims: ["location"]
+2019-02-22 18:45:45.563 +08:00 [DBG] Creating refresh token
+2019-02-22 18:45:45.563 +08:00 [DBG] Setting an absolute lifetime: 2592000
+2019-02-22 18:45:45.574 +08:00 [DBG] client configuration validation for client hybrid client succeeded.
+2019-02-22 18:45:45.575 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: hybrid client
+2019-02-22 18:45:45.575 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core Hybrid 客户端 with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","phone_number","phone_number_verified","email","email_verified","role","location"] via ClaimsProviderIdentityToken
+2019-02-22 18:45:45.575 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address","location","role"]
+2019-02-22 18:45:45.578 +08:00 [INF] {"ClientId":"hybrid client","ClientName":"ASP.NET Core Hybrid 客户端","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile email phone address roles locations api1 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****i_Aw","$type":"Token"},{"TokenType":"refresh_token","TokenValue":"****cb37","$type":"Token"},{"TokenType":"access_token","TokenValue":"****784f","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QI:00000003","TimeStamp":"2019-02-22T10:45:45.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:45:45.578 +08:00 [DBG] Token request success.
+2019-02-22 18:45:45.619 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:45:45.620 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:45:45.620 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:45:45.620 +08:00 [DBG] Start discovery request
+2019-02-22 18:45:45.635 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:45:45.635 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:45:45.635 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:45:45.635 +08:00 [DBG] Start key discovery request
+2019-02-22 18:45:45.705 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:45:45.705 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:45:45.706 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:45:45.706 +08:00 [DBG] Start discovery request
+2019-02-22 18:45:45.717 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:45:45.717 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:45:45.717 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:45:45.717 +08:00 [DBG] Start key discovery request
+2019-02-22 18:45:45.742 +08:00 [DBG] Request path /connect/introspect matched to endpoint type Introspection
+2019-02-22 18:45:45.743 +08:00 [DBG] Endpoint enabled: Introspection, successfully created handler: IdentityServer4.Endpoints.IntrospectionEndpoint
+2019-02-22 18:45:45.743 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.IntrospectionEndpoint for /connect/introspect
+2019-02-22 18:45:45.751 +08:00 [DBG] Starting introspection request.
+2019-02-22 18:45:45.756 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 18:45:45.756 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 18:45:45.756 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 18:45:45.756 +08:00 [DBG] Secret id found: api1
+2019-02-22 18:45:45.756 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 18:45:45.756 +08:00 [DBG] API resource validation success
+2019-02-22 18:45:45.757 +08:00 [INF] {"ApiName":"api1","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"API Authentication Success","EventType":"Success","Id":1020,"Message":null,"ActivityId":"0HLKOM8OTJ3QL:00000001","TimeStamp":"2019-02-22T10:45:45.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ApiAuthenticationSuccessEvent"}
+2019-02-22 18:45:45.760 +08:00 [DBG] Introspection request validation started.
+2019-02-22 18:45:45.771 +08:00 [DBG] client configuration validation for client hybrid client succeeded.
+2019-02-22 18:45:45.772 +08:00 [DBG] client configuration validation for client hybrid client succeeded.
+2019-02-22 18:45:45.773 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:45:45.773 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:45:45.773 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Reference","ExpectedScope":null,"TokenHandle":"e096eb8c4f627068853fc755e3b15c948475a6dacd0b1fed06c5f6627f8b784f","JwtId":null,"Claims":{"iss":"http://localhost:5000","nbf":1550832345,"exp":1550835945,"aud":["http://localhost:5000/resources","api1"],"client_id":"hybrid client","scope":["openid","profile","address","phone","email","roles","locations","api1","offline_access"],"sub":"88421113","auth_time":1550832051,"idp":"local","amr":"pwd","location":"somewhere"},"$type":"TokenValidationLog"}
+2019-02-22 18:45:45.773 +08:00 [DBG] Introspection request validation successful.
+2019-02-22 18:45:45.784 +08:00 [DBG] Creating introspection response for active token.
+2019-02-22 18:45:45.786 +08:00 [INF] {"ApiName":"api1","IsActive":true,"Token":"****784f","ClaimTypes":["iss","nbf","exp","aud","client_id","scope","sub","auth_time","idp","amr","location"],"TokenScopes":["openid","profile","address","phone","email","roles","locations","api1","offline_access"],"Category":"Token","Name":"Token Introspection Success","EventType":"Success","Id":2020,"Message":null,"ActivityId":"0HLKOM8OTJ3QL:00000001","TimeStamp":"2019-02-22T10:45:45.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIntrospectionSuccessEvent"}
+2019-02-22 18:45:45.786 +08:00 [INF] Success token introspection. Token active: true, for API name: api1
+2019-02-22 18:46:53.285 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 18:46:53.285 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 18:46:53.285 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 18:46:53.285 +08:00 [DBG] Start authorize request
+2019-02-22 18:46:53.285 +08:00 [DBG] User in authorize request: 88421113
+2019-02-22 18:46:53.285 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:46:53.285 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:46:53.285 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 18:46:53.285 +08:00 [DBG] No PKCE used.
+2019-02-22 18:46:53.286 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:46:53.286 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"flask client","ClientName":"Flask 客户端","RedirectUri":"http://localhost:7002/oidc_callback","AllowedRedirectUris":["http://localhost:7002/oidc_callback"],"SubjectId":"88421113","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid email profile api1","State":"eyJjc3JmX3Rva2VuIjogIlVSMW9LZm02Wm9nZlFLaFZGMTNNVDJ1Tmk2RktUTmNQIiwgImRlc3RpbmF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUo5LkltaDBkSEE2THk5c2IyTmhiR2h2YzNRNk56QXdNaTl3Y21sMllYUmxJZy5JTjFwc0VnaTY3eHZ0N25tRVhOc3ZRNHJtZjF4R0ZrVXhQdVhXV3VTYm1ZIn0=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"26779630ffc88a33d4ba63b5e615a242","Raw":{"client_id":"flask client","redirect_uri":"http://localhost:7002/oidc_callback","scope":"openid email profile api1","access_type":"offline","response_type":"code","state":"eyJjc3JmX3Rva2VuIjogIlVSMW9LZm02Wm9nZlFLaFZGMTNNVDJ1Tmk2RktUTmNQIiwgImRlc3RpbmF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUo5LkltaDBkSEE2THk5c2IyTmhiR2h2YzNRNk56QXdNaTl3Y21sMllYUmxJZy5JTjFwc0VnaTY3eHZ0N25tRVhOc3ZRNHJtZjF4R0ZrVXhQdVhXV3VTYm1ZIn0="},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 18:46:53.286 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-02-22 18:46:53.286 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2019-02-22 18:46:53.286 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-02-22 18:46:53.299 +08:00 [INF] {"ClientId":"flask client","ClientName":"Flask 客户端","RedirectUri":"http://localhost:7002/oidc_callback","Endpoint":"Authorize","SubjectId":"88421113","Scopes":"openid email profile api1","GrantType":"authorization_code","Tokens":[{"TokenType":"code","TokenValue":"****1581","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QD:00000003","TimeStamp":"2019-02-22T10:46:53.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:46:53.300 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"88421113","ClientId":"flask client","RedirectUri":"http://localhost:7002/oidc_callback","State":"eyJjc3JmX3Rva2VuIjogIlVSMW9LZm02Wm9nZlFLaFZGMTNNVDJ1Tmk2RktUTmNQIiwgImRlc3RpbmF0aW9uIjogImV5SmhiR2NpT2lKSVV6STFOaUo5LkltaDBkSEE2THk5c2IyTmhiR2h2YzNRNk56QXdNaTl3Y21sMllYUmxJZy5JTjFwc0VnaTY3eHZ0N25tRVhOc3ZRNHJtZjF4R0ZrVXhQdVhXV3VTYm1ZIn0=","Scope":"openid email profile api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-02-22 18:46:53.308 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-02-22 18:46:53.308 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-02-22 18:46:53.308 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-02-22 18:46:53.309 +08:00 [DBG] Start token request.
+2019-02-22 18:46:53.309 +08:00 [DBG] Start client validation
+2019-02-22 18:46:53.309 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 18:46:53.309 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 18:46:53.309 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 18:46:53.309 +08:00 [DBG] Secret id found: flask client
+2019-02-22 18:46:53.309 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:46:53.309 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 18:46:53.309 +08:00 [DBG] Client validation success
+2019-02-22 18:46:53.310 +08:00 [INF] {"ClientId":"flask client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLKOM8OTJ3QM:00000001","TimeStamp":"2019-02-22T10:46:53.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-02-22 18:46:53.310 +08:00 [DBG] Start token request validation
+2019-02-22 18:46:53.310 +08:00 [DBG] Start validation of authorization code token request
+2019-02-22 18:46:53.320 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-02-22 18:46:53.320 +08:00 [DBG] Validation of authorization code token request success
+2019-02-22 18:46:53.320 +08:00 [INF] Token request validation success
+{"ClientId":"flask client","ClientName":"Flask 客户端","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"41190538c1cdc2fd68a8fd390ddc3d6cf4e4f82be6c973e74f4e4fbef0c21581","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"flask client","code":"41190538c1cdc2fd68a8fd390ddc3d6cf4e4f82be6c973e74f4e4fbef0c21581","scope":"openid email profile api1","client_secret":"***REDACTED***","grant_type":"authorization_code","redirect_uri":"http://localhost:7002/oidc_callback"},"$type":"TokenRequestValidationLog"}
+2019-02-22 18:46:53.321 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:46:53.321 +08:00 [DBG] Getting claims for access token for client: flask client
+2019-02-22 18:46:53.321 +08:00 [DBG] Getting claims for access token for subject: 88421113
+2019-02-22 18:46:53.321 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["location"] via ClaimsProviderAccessToken
+2019-02-22 18:46:53.321 +08:00 [DBG] Issued claims: ["location"]
+2019-02-22 18:46:53.324 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:46:53.324 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: flask client
+2019-02-22 18:46:53.324 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-02-22 18:46:53.327 +08:00 [INF] {"ClientId":"flask client","ClientName":"Flask 客户端","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid email profile api1","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****R7TQ","$type":"Token"},{"TokenType":"access_token","TokenValue":"****Uxpg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QM:00000001","TimeStamp":"2019-02-22T10:46:53.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:46:53.327 +08:00 [DBG] Token request success.
+2019-02-22 18:46:53.532 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:46:53.532 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:46:53.532 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:46:53.532 +08:00 [DBG] Start userinfo request
+2019-02-22 18:46:53.532 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:46:53.535 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:46:53.535 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:46:53.535 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:46:53.535 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:46:53.535 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832413,"exp":1550836013,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:46:53.535 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:46:53.535 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:46:53.535 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:46:53.535 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:46:53.535 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:46:53.535 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:46:53.536 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:46:53.536 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:46:53.536 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:46:53.536 +08:00 [DBG] End userinfo request
+2019-02-22 18:47:00.676 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 18:47:00.676 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 18:47:00.677 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 18:47:00.677 +08:00 [DBG] Start authorize request
+2019-02-22 18:47:00.677 +08:00 [DBG] User in authorize request: 88421113
+2019-02-22 18:47:00.677 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:47:00.677 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 18:47:00.677 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 18:47:00.677 +08:00 [DBG] No PKCE used.
+2019-02-22 18:47:00.678 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:47:00.678 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","AllowedRedirectUris":["http://localhost:7001/signin-oidc"],"SubjectId":"88421113","ResponseType":"code","ResponseMode":"form_post","GrantType":"authorization_code","RequestedScopes":"api1 api2 openid profile email phone address offline_access","State":"CfDJ8PPRh7dM_X9Poiy0585yn7SeweHkvGEixLUHMTv6VRT6PsYRyRwFonAcU0irL2vCtAysARC5VTRFP-LpRdLyq02H9dF5ScpXltSDiQdkXK_nZdZaqTfSuk6Pdtsrl_bxElENHsFkDr3zZzr_1YOGneOFRq33CQFN7kTqT9WXSD7Kowaom6iJNP8EiVIFf3h_R5YxgeiiMCiIk3h7MtABwwR1KuoQjSyEDUQUchMuLpfSCJrHB_74Bl0iXNBq-hVCTUWC0mYDMSCw_wXslMGe0nhJHsBc_97inhsDxybp1-HbIb4t9qXa_UBwn_44rTVydA","UiLocales":null,"Nonce":"636864292206703662.ZmUxZmRlYzctYzdmNy00YzE3LThkNzEtNDhiYWQxMWFkMGNjNjViYzRmNDktOTI2NS00NmI3LWFjNTEtY2EwN2RhMDY2N2M5","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"26779630ffc88a33d4ba63b5e615a242","Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7001/signin-oidc","response_type":"code","scope":"api1 api2 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864292206703662.ZmUxZmRlYzctYzdmNy00YzE3LThkNzEtNDhiYWQxMWFkMGNjNjViYzRmNDktOTI2NS00NmI3LWFjNTEtY2EwN2RhMDY2N2M5","state":"CfDJ8PPRh7dM_X9Poiy0585yn7SeweHkvGEixLUHMTv6VRT6PsYRyRwFonAcU0irL2vCtAysARC5VTRFP-LpRdLyq02H9dF5ScpXltSDiQdkXK_nZdZaqTfSuk6Pdtsrl_bxElENHsFkDr3zZzr_1YOGneOFRq33CQFN7kTqT9WXSD7Kowaom6iJNP8EiVIFf3h_R5YxgeiiMCiIk3h7MtABwwR1KuoQjSyEDUQUchMuLpfSCJrHB_74Bl0iXNBq-hVCTUWC0mYDMSCw_wXslMGe0nhJHsBc_97inhsDxybp1-HbIb4t9qXa_UBwn_44rTVydA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 18:47:00.678 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-02-22 18:47:00.678 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2019-02-22 18:47:00.678 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-02-22 18:47:00.686 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","Endpoint":"Authorize","SubjectId":"88421113","Scopes":"openid profile email phone address api1 api2 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"code","TokenValue":"****c28b","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QD:00000004","TimeStamp":"2019-02-22T10:47:00.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:47:00.686 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"88421113","ClientId":"mvc client","RedirectUri":"http://localhost:7001/signin-oidc","State":"CfDJ8PPRh7dM_X9Poiy0585yn7SeweHkvGEixLUHMTv6VRT6PsYRyRwFonAcU0irL2vCtAysARC5VTRFP-LpRdLyq02H9dF5ScpXltSDiQdkXK_nZdZaqTfSuk6Pdtsrl_bxElENHsFkDr3zZzr_1YOGneOFRq33CQFN7kTqT9WXSD7Kowaom6iJNP8EiVIFf3h_R5YxgeiiMCiIk3h7MtABwwR1KuoQjSyEDUQUchMuLpfSCJrHB_74Bl0iXNBq-hVCTUWC0mYDMSCw_wXslMGe0nhJHsBc_97inhsDxybp1-HbIb4t9qXa_UBwn_44rTVydA","Scope":"openid profile email phone address api1 api2 offline_access","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-02-22 18:47:00.740 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-02-22 18:47:00.740 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-02-22 18:47:00.740 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-02-22 18:47:00.740 +08:00 [DBG] Start token request.
+2019-02-22 18:47:00.740 +08:00 [DBG] Start client validation
+2019-02-22 18:47:00.740 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 18:47:00.740 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 18:47:00.740 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 18:47:00.740 +08:00 [DBG] Secret id found: mvc client
+2019-02-22 18:47:00.741 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 18:47:00.741 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 18:47:00.741 +08:00 [DBG] Client validation success
+2019-02-22 18:47:00.741 +08:00 [INF] {"ClientId":"mvc client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLKOM8OTJ3QO:00000001","TimeStamp":"2019-02-22T10:47:00.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-02-22 18:47:00.741 +08:00 [DBG] Start token request validation
+2019-02-22 18:47:00.741 +08:00 [DBG] Start validation of authorization code token request
+2019-02-22 18:47:00.753 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-02-22 18:47:00.753 +08:00 [DBG] Validation of authorization code token request success
+2019-02-22 18:47:00.753 +08:00 [INF] Token request validation success
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"376dfa98066316f2962403e1c0a8cfbaeea1fe856f606a9aa34ad99457a8c28b","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"mvc client","client_secret":"***REDACTED***","code":"376dfa98066316f2962403e1c0a8cfbaeea1fe856f606a9aa34ad99457a8c28b","grant_type":"authorization_code","redirect_uri":"http://localhost:7001/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-02-22 18:47:00.754 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 18:47:00.754 +08:00 [DBG] Getting claims for access token for client: mvc client
+2019-02-22 18:47:00.754 +08:00 [DBG] Getting claims for access token for subject: 88421113
+2019-02-22 18:47:00.754 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["location"] via ClaimsProviderAccessToken
+2019-02-22 18:47:00.754 +08:00 [DBG] Issued claims: ["location"]
+2019-02-22 18:47:00.759 +08:00 [DBG] Creating refresh token
+2019-02-22 18:47:00.759 +08:00 [DBG] Setting an absolute lifetime: 2592000
+2019-02-22 18:47:00.767 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 18:47:00.767 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: mvc client
+2019-02-22 18:47:00.767 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","phone_number","phone_number_verified","email","email_verified"] via ClaimsProviderIdentityToken
+2019-02-22 18:47:00.767 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-02-22 18:47:00.770 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile email phone address api1 api2 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****dWyw","$type":"Token"},{"TokenType":"refresh_token","TokenValue":"****ad3b","$type":"Token"},{"TokenType":"access_token","TokenValue":"****gR_w","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QO:00000001","TimeStamp":"2019-02-22T10:47:00.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:47:00.770 +08:00 [DBG] Token request success.
+2019-02-22 18:47:00.783 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:47:00.783 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:47:00.783 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:47:00.783 +08:00 [DBG] Start discovery request
+2019-02-22 18:47:00.785 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:47:00.785 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:47:00.785 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:47:00.785 +08:00 [DBG] Start key discovery request
+2019-02-22 18:47:13.928 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:47:13.928 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:47:13.928 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:47:13.929 +08:00 [DBG] Start userinfo request
+2019-02-22 18:47:13.929 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:47:13.930 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:47:13.930 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:47:13.930 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:47:13.930 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:47:13.931 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832413,"exp":1550836013,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:47:13.931 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:47:13.931 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:47:13.931 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:47:13.931 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:47:13.931 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:47:13.931 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:47:13.931 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:47:13.931 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:47:13.931 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:47:13.931 +08:00 [DBG] End userinfo request
+2019-02-22 18:47:28.472 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:47:28.472 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:47:28.472 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:47:28.472 +08:00 [DBG] Start userinfo request
+2019-02-22 18:47:28.472 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:47:28.474 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:47:28.474 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:47:28.474 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:47:28.474 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:47:28.475 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832413,"exp":1550836013,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:47:28.475 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:47:28.475 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:47:28.475 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:47:28.475 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:47:28.475 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:47:28.475 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:47:28.475 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:47:28.475 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:47:28.475 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:47:28.475 +08:00 [DBG] End userinfo request
+2019-02-22 18:48:08.291 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-02-22 18:48:08.294 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-02-22 18:48:08.294 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-02-22 18:48:08.295 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:48:08.295 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:48:08.295 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:48:08.295 +08:00 [DBG] Start discovery request
+2019-02-22 18:48:08.313 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 18:48:08.313 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 18:48:08.313 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 18:48:08.313 +08:00 [DBG] Start authorize request
+2019-02-22 18:48:08.314 +08:00 [DBG] User in authorize request: 88421113
+2019-02-22 18:48:08.314 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 18:48:08.314 +08:00 [DBG] client configuration validation for client angular-client succeeded.
+2019-02-22 18:48:08.314 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 18:48:08.314 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"88421113","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"b45cf733e9ed467fb5ffad00afd67d49","UiLocales":null,"Nonce":"1d1d1db40ae14b65b0639edb51f08338","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"26779630ffc88a33d4ba63b5e615a242","Raw":{"client_id":"angular-client","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"b45cf733e9ed467fb5ffad00afd67d49","nonce":"1d1d1db40ae14b65b0639edb51f08338"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 18:48:08.314 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-02-22 18:48:08.314 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2019-02-22 18:48:08.315 +08:00 [DBG] Creating Implicit Flow response.
+2019-02-22 18:48:08.315 +08:00 [DBG] Getting claims for access token for client: angular-client
+2019-02-22 18:48:08.315 +08:00 [DBG] Getting claims for access token for subject: 88421113
+2019-02-22 18:48:08.315 +08:00 [DBG] Get profile called for subject 88421113 from client Angular SPA 客户端 with claim types ["location"] via ClaimsProviderAccessToken
+2019-02-22 18:48:08.315 +08:00 [DBG] Issued claims: ["location"]
+2019-02-22 18:48:08.318 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: angular-client
+2019-02-22 18:48:08.318 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-02-22 18:48:08.321 +08:00 [INF] {"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","Endpoint":"Authorize","SubjectId":"88421113","Scopes":"openid profile address email phone api1","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****mNWQ","$type":"Token"},{"TokenType":"access_token","TokenValue":"****83Fw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOM8OTJ3QD:00000005","TimeStamp":"2019-02-22T10:48:08.0000000Z","ProcessId":12540,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 18:48:08.321 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"88421113","ClientId":"angular-client","RedirectUri":"http://localhost:4200/signin-oidc","State":"b45cf733e9ed467fb5ffad00afd67d49","Scope":"openid profile address email phone api1","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-02-22 18:48:08.322 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 18:48:08.322 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 18:48:10.009 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-02-22 18:48:10.009 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-02-22 18:48:10.010 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-02-22 18:48:10.010 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:48:10.010 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:48:10.010 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:48:10.010 +08:00 [DBG] Start discovery request
+2019-02-22 18:48:10.023 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2019-02-22 18:48:10.023 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-02-22 18:48:10.023 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-02-22 18:48:10.023 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:48:10.023 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:48:10.023 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:48:10.023 +08:00 [DBG] Start key discovery request
+2019-02-22 18:48:10.045 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-02-22 18:48:10.046 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-02-22 18:48:10.046 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-02-22 18:48:10.051 +08:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2019-02-22 18:48:10.051 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-02-22 18:48:10.051 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-02-22 18:48:10.051 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:48:10.052 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:48:10.052 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:48:10.052 +08:00 [DBG] Start userinfo request
+2019-02-22 18:48:10.052 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:48:10.055 +08:00 [DBG] client configuration validation for client angular-client succeeded.
+2019-02-22 18:48:10.055 +08:00 [DBG] client configuration validation for client angular-client succeeded.
+2019-02-22 18:48:10.056 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:48:10.056 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:48:10.056 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832488,"exp":1550832788,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"angular-client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","address","email","phone","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:48:10.056 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:48:10.056 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:48:10.056 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-02-22 18:48:10.057 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-02-22 18:48:10.057 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at address email email_verified phone_number phone_number_verified
+2019-02-22 18:48:10.057 +08:00 [DBG] Scopes in access token: openid profile address email phone api1
+2019-02-22 18:48:10.057 +08:00 [DBG] Get profile called for subject 88421113 from client Angular SPA 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","email","email_verified","phone_number","phone_number_verified"] via UserInfoEndpoint
+2019-02-22 18:48:10.057 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-02-22 18:48:10.057 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website address
+2019-02-22 18:48:10.057 +08:00 [DBG] End userinfo request
+2019-02-22 18:48:10.083 +08:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-02-22 18:48:10.083 +08:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-02-22 18:48:10.083 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-02-22 18:48:10.084 +08:00 [DBG] Rendering check session result
+2019-02-22 18:50:44.176 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:50:44.176 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:50:44.177 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:50:44.177 +08:00 [DBG] Start userinfo request
+2019-02-22 18:50:44.177 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:50:44.180 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:50:44.180 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:50:44.180 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:50:44.180 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:50:44.180 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832413,"exp":1550836013,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:50:44.180 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:50:44.180 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:50:44.180 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:44.180 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:44.181 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:50:44.181 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:44.181 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:50:44.181 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:50:44.181 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:50:44.181 +08:00 [DBG] End userinfo request
+2019-02-22 18:50:46.709 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:50:46.710 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:50:46.710 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:50:46.710 +08:00 [DBG] Start userinfo request
+2019-02-22 18:50:46.710 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:50:46.713 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:50:46.713 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:50:46.713 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:50:46.713 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:50:46.713 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832413,"exp":1550836013,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:50:46.713 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:50:46.713 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:50:46.713 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:46.714 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:46.714 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:50:46.714 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:46.714 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:50:46.714 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:50:46.714 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:50:46.714 +08:00 [DBG] End userinfo request
+2019-02-22 18:50:49.306 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:50:49.306 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:50:49.306 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:50:49.306 +08:00 [DBG] Start userinfo request
+2019-02-22 18:50:49.306 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:50:49.308 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:50:49.308 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:50:49.308 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:50:49.308 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:50:49.309 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832413,"exp":1550836013,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:50:49.309 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:50:49.309 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:50:49.309 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:49.309 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:49.309 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:50:49.309 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:49.309 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:50:49.309 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:50:49.309 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:50:49.309 +08:00 [DBG] End userinfo request
+2019-02-22 18:50:50.262 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 18:50:50.262 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 18:50:50.262 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 18:50:50.262 +08:00 [DBG] Start discovery request
+2019-02-22 18:50:50.264 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 18:50:50.264 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 18:50:50.264 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 18:50:50.264 +08:00 [DBG] Start key discovery request
+2019-02-22 18:50:51.182 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-22 18:50:51.182 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-22 18:50:51.182 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-22 18:50:51.182 +08:00 [DBG] Start userinfo request
+2019-02-22 18:50:51.182 +08:00 [DBG] Bearer token found in header
+2019-02-22 18:50:51.184 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:50:51.185 +08:00 [DBG] client configuration validation for client flask client succeeded.
+2019-02-22 18:50:51.185 +08:00 [DBG] IsActive called from: AccessTokenValidation
+2019-02-22 18:50:51.185 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-02-22 18:50:51.185 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1550832413,"exp":1550836013,"iss":"http://localhost:5000","aud":["http://localhost:5000/resources","api1"],"client_id":"flask client","sub":"88421113","auth_time":1550832051,"idp":"local","location":"somewhere","scope":["openid","profile","email","api1"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-02-22 18:50:51.185 +08:00 [DBG] IsActive called from: UserInfoRequestValidation
+2019-02-22 18:50:51.185 +08:00 [DBG] Creating userinfo response
+2019-02-22 18:50:51.185 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:51.185 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:51.185 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2019-02-22 18:50:51.185 +08:00 [DBG] Scopes in access token: openid profile email api1
+2019-02-22 18:50:51.185 +08:00 [DBG] Get profile called for subject 88421113 from client Flask 客户端 with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2019-02-22 18:50:51.185 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
+2019-02-22 18:50:51.185 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
+2019-02-22 18:50:51.185 +08:00 [DBG] End userinfo request
