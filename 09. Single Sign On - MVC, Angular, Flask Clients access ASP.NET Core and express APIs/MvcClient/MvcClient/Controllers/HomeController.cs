@@ -140,5 +140,37 @@ namespace MvcClient.Controllers
 
             return tokenResponse.AccessToken;
         }
+
+        [HttpGet]
+        public async Task<IActionResult> AccessApis()
+        {
+            var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
+
+            var apiClient = new HttpClient();
+            apiClient.SetBearerToken(accessToken);
+
+            var response1 = await apiClient.GetAsync("http://localhost:5001/identity");
+            if (!response1.IsSuccessStatusCode)
+            {
+                throw new Exception("Access Api1 Failed");
+            }
+
+            var api1Result = await response1.Content.ReadAsStringAsync();
+            ViewData["api1"] = api1Result;
+
+            var apiClient2 = new HttpClient();
+            apiClient2.SetBearerToken(accessToken);
+
+            var response2 = await apiClient2.GetAsync("http://localhost:5002/me");
+            if (!response2.IsSuccessStatusCode)
+            {
+                throw new Exception("Access Api2 Failed");
+            }
+
+            var api2Result = await response2.Content.ReadAsStringAsync();
+            ViewData["api2"] = api2Result;
+
+            return View();
+        }
     }
 }

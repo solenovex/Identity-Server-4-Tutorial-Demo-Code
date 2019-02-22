@@ -52,6 +52,7 @@ namespace MvcClient
 
                     options.Scope.Clear();
                     options.Scope.Add("api1");
+                    options.Scope.Add("api2");
                     options.Scope.Add(OidcConstants.StandardScopes.OpenId);
                     options.Scope.Add(OidcConstants.StandardScopes.Profile);
                     options.Scope.Add(OidcConstants.StandardScopes.Email);

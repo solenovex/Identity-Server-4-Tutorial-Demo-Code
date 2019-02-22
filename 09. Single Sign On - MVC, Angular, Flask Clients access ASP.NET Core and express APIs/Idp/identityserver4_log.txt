@@ -14981,3 +14981,488 @@
 2019-02-22 12:31:36.632 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website"]
 2019-02-22 12:31:36.632 +08:00 [INF] Profile service returned the following claim types: name given_name family_name email email_verified website
 2019-02-22 12:31:36.632 +08:00 [DBG] End userinfo request
+2019-02-22 13:14:58.367 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-02-22 13:14:58.393 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-02-22 13:14:58.395 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-02-22 13:14:58.396 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-02-22 13:14:58.396 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-02-22 13:14:58.397 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-02-22 13:14:58.397 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-02-22 13:27:15.636 +08:00 [DBG] Login Url: /Account/Login
+2019-02-22 13:27:15.652 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 13:27:15.654 +08:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 13:27:15.654 +08:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 13:27:15.654 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 13:27:15.655 +08:00 [DBG] Error Url: /home/error
+2019-02-22 13:27:15.655 +08:00 [DBG] Error Id Parameter: errorId
+2019-02-22 13:27:15.690 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:27:15.702 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:27:15.704 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:27:15.708 +08:00 [DBG] Start discovery request
+2019-02-22 13:27:16.206 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:27:16.208 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:27:16.209 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:27:16.213 +08:00 [DBG] Start key discovery request
+2019-02-22 13:27:16.361 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 13:27:16.364 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 13:27:16.366 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 13:27:16.369 +08:00 [DBG] Start authorize request
+2019-02-22 13:27:16.399 +08:00 [DBG] No user present in authorize request
+2019-02-22 13:27:16.408 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:27:16.423 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:27:16.438 +08:00 [ERR] Invalid redirect_uri: http://localhost:7003/signin-oidc
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":null,"AllowedRedirectUris":["http://localhost:5002/signin-oidc"],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7003/signin-oidc","response_type":"code","scope":"api1 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864100362649400.NzQwOWJmZGItOWZmMS00NDg3LWIzNzgtYTQ2ZTA1MzQyMzk4MmYwNTk0N2EtODBkNC00ZjliLTgyMWEtZTU0YzRlYzMzNDk5","state":"CfDJ8LW6UIEwqIdElv_5QOMpHlvdbVRGz_6BkO97gMqQdmwigNPmLnDbk0T7K4L-1TglvtpsSSRy7u1jRxHuBlPDyVsqWic0JOSeSSRLnIKHsC0ARwh6r1BRtwa72dBsrfuuNDTnesTsV5_MoCW8NdoEytbsglEg-43lG0_Xw1qfWkS-tfrzJVIRJtnxBLN_irvct-4-O7Q6DVi0-kCqw_Pg3H2-cmRZhFdbqfTy7RXs4PqHIlDQwXVwJUtvX35ZQ1X5VpHIIC3tX4x5hOktbVplLl25nvVNCSVsyuIRoytBc_Ceo6WnclAri07NiUyCw7kEFA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 13:27:16.478 +08:00 [ERR] Request validation failed
+2019-02-22 13:27:16.478 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":null,"AllowedRedirectUris":["http://localhost:5002/signin-oidc"],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7003/signin-oidc","response_type":"code","scope":"api1 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864100362649400.NzQwOWJmZGItOWZmMS00NDg3LWIzNzgtYTQ2ZTA1MzQyMzk4MmYwNTk0N2EtODBkNC00ZjliLTgyMWEtZTU0YzRlYzMzNDk5","state":"CfDJ8LW6UIEwqIdElv_5QOMpHlvdbVRGz_6BkO97gMqQdmwigNPmLnDbk0T7K4L-1TglvtpsSSRy7u1jRxHuBlPDyVsqWic0JOSeSSRLnIKHsC0ARwh6r1BRtwa72dBsrfuuNDTnesTsV5_MoCW8NdoEytbsglEg-43lG0_Xw1qfWkS-tfrzJVIRJtnxBLN_irvct-4-O7Q6DVi0-kCqw_Pg3H2-cmRZhFdbqfTy7RXs4PqHIlDQwXVwJUtvX35ZQ1X5VpHIIC3tX4x5hOktbVplLl25nvVNCSVsyuIRoytBc_Ceo6WnclAri07NiUyCw7kEFA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 13:27:16.519 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Invalid redirect_uri","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLKOGPJRL6FI:00000001","TimeStamp":"2019-02-22T05:27:16.0000000Z","ProcessId":11744,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-02-22 13:28:01.255 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-02-22 13:28:01.281 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-02-22 13:28:01.283 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-02-22 13:28:01.283 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-02-22 13:28:01.283 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-02-22 13:28:01.283 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-02-22 13:28:01.283 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-02-22 13:28:17.671 +08:00 [DBG] Login Url: /Account/Login
+2019-02-22 13:28:17.672 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 13:28:17.672 +08:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 13:28:17.673 +08:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 13:28:17.673 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 13:28:17.673 +08:00 [DBG] Error Url: /home/error
+2019-02-22 13:28:17.673 +08:00 [DBG] Error Id Parameter: errorId
+2019-02-22 13:28:17.688 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 13:28:17.693 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 13:28:17.693 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 13:28:17.695 +08:00 [DBG] Start authorize request
+2019-02-22 13:28:17.703 +08:00 [DBG] No user present in authorize request
+2019-02-22 13:28:17.706 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:28:17.719 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:17.724 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:28:17.725 +08:00 [DBG] No PKCE used.
+2019-02-22 13:28:17.758 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 13:28:17.770 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7003/signin-oidc","AllowedRedirectUris":["http://localhost:7003/signin-oidc"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"form_post","GrantType":"authorization_code","RequestedScopes":"api1 openid profile email phone address offline_access","State":"CfDJ8LW6UIEwqIdElv_5QOMpHlvFD5L2Fok9ek14Nrri8HpGtYSh-vxKpp8-5eZK3mtdmBijbidwrFRrgRwRAPJNkjzpyaIGOrda7hreVAOoHGAh-VdgrBexKvewH5myijLyFuUdyV6jqdP2S--6_7zw_WbHjfGDkwBlixvFvel-A1vtz5QwLIOF3GVfbIGw-IKpg5OXgDs551v4c2QqqBcBthFSZvADv8eisgGEXRwC-m-Qcg1r1aPyFkC18I0sFHRmJc_JRcs0yZMNEzL0GX_NbUOsNkOmzcStwnAGb-22_E-ZrVJoIXVcGA-vA6jdSFunxw","UiLocales":null,"Nonce":"636864100975752679.ZTJmNWVmNDgtNzFkZC00YzUyLThmMzgtYzk1ODNmNjRlN2I4YTVmZTU5YTQtZWY0YS00MGE0LWI5YzEtZmQwNDJhNTQ5YmU4","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7003/signin-oidc","response_type":"code","scope":"api1 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864100975752679.ZTJmNWVmNDgtNzFkZC00YzUyLThmMzgtYzk1ODNmNjRlN2I4YTVmZTU5YTQtZWY0YS00MGE0LWI5YzEtZmQwNDJhNTQ5YmU4","state":"CfDJ8LW6UIEwqIdElv_5QOMpHlvFD5L2Fok9ek14Nrri8HpGtYSh-vxKpp8-5eZK3mtdmBijbidwrFRrgRwRAPJNkjzpyaIGOrda7hreVAOoHGAh-VdgrBexKvewH5myijLyFuUdyV6jqdP2S--6_7zw_WbHjfGDkwBlixvFvel-A1vtz5QwLIOF3GVfbIGw-IKpg5OXgDs551v4c2QqqBcBthFSZvADv8eisgGEXRwC-m-Qcg1r1aPyFkC18I0sFHRmJc_JRcs0yZMNEzL0GX_NbUOsNkOmzcStwnAGb-22_E-ZrVJoIXVcGA-vA6jdSFunxw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 13:28:17.787 +08:00 [INF] Showing login: User is not authenticated
+2019-02-22 13:28:17.933 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:28:17.933 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:17.933 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:28:17.933 +08:00 [DBG] No PKCE used.
+2019-02-22 13:28:17.934 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 13:28:17.936 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:22.006 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-22 13:28:22.153 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:28:22.153 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:22.153 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:28:22.153 +08:00 [DBG] No PKCE used.
+2019-02-22 13:28:22.153 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 13:28:22.161 +08:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"88421113","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKOGQ6794HU:00000001","TimeStamp":"2019-02-22T05:28:22.0000000Z","ProcessId":8696,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-22 13:28:22.172 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 13:28:22.173 +08:00 [DBG] Adding idp claim with value: local
+2019-02-22 13:28:22.174 +08:00 [DBG] Adding amr claim with value: pwd
+2019-02-22 13:28:22.191 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 13:28:22.192 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:22.228 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-02-22 13:28:22.228 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-02-22 13:28:22.228 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-02-22 13:28:22.231 +08:00 [DBG] Start authorize callback request
+2019-02-22 13:28:22.235 +08:00 [DBG] User in authorize request: 88421113
+2019-02-22 13:28:22.235 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:28:22.235 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:22.235 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:28:22.235 +08:00 [DBG] No PKCE used.
+2019-02-22 13:28:22.235 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 13:28:22.235 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7003/signin-oidc","AllowedRedirectUris":["http://localhost:7003/signin-oidc"],"SubjectId":"88421113","ResponseType":"code","ResponseMode":"form_post","GrantType":"authorization_code","RequestedScopes":"api1 openid profile email phone address offline_access","State":"CfDJ8LW6UIEwqIdElv_5QOMpHlvFD5L2Fok9ek14Nrri8HpGtYSh-vxKpp8-5eZK3mtdmBijbidwrFRrgRwRAPJNkjzpyaIGOrda7hreVAOoHGAh-VdgrBexKvewH5myijLyFuUdyV6jqdP2S--6_7zw_WbHjfGDkwBlixvFvel-A1vtz5QwLIOF3GVfbIGw-IKpg5OXgDs551v4c2QqqBcBthFSZvADv8eisgGEXRwC-m-Qcg1r1aPyFkC18I0sFHRmJc_JRcs0yZMNEzL0GX_NbUOsNkOmzcStwnAGb-22_E-ZrVJoIXVcGA-vA6jdSFunxw","UiLocales":null,"Nonce":"636864100975752679.ZTJmNWVmNDgtNzFkZC00YzUyLThmMzgtYzk1ODNmNjRlN2I4YTVmZTU5YTQtZWY0YS00MGE0LWI5YzEtZmQwNDJhNTQ5YmU4","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"2a88986a15bcba3de2cd18eedc02fb15","Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7003/signin-oidc","response_type":"code","scope":"api1 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864100975752679.ZTJmNWVmNDgtNzFkZC00YzUyLThmMzgtYzk1ODNmNjRlN2I4YTVmZTU5YTQtZWY0YS00MGE0LWI5YzEtZmQwNDJhNTQ5YmU4","state":"CfDJ8LW6UIEwqIdElv_5QOMpHlvFD5L2Fok9ek14Nrri8HpGtYSh-vxKpp8-5eZK3mtdmBijbidwrFRrgRwRAPJNkjzpyaIGOrda7hreVAOoHGAh-VdgrBexKvewH5myijLyFuUdyV6jqdP2S--6_7zw_WbHjfGDkwBlixvFvel-A1vtz5QwLIOF3GVfbIGw-IKpg5OXgDs551v4c2QqqBcBthFSZvADv8eisgGEXRwC-m-Qcg1r1aPyFkC18I0sFHRmJc_JRcs0yZMNEzL0GX_NbUOsNkOmzcStwnAGb-22_E-ZrVJoIXVcGA-vA6jdSFunxw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 13:28:22.236 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-02-22 13:28:22.243 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2019-02-22 13:28:22.246 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-02-22 13:28:22.301 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7003/signin-oidc","Endpoint":"Authorize","SubjectId":"88421113","Scopes":"openid profile email phone address api1 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"code","TokenValue":"****38a5","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOGQ6794HU:00000002","TimeStamp":"2019-02-22T05:28:22.0000000Z","ProcessId":8696,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 13:28:22.302 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"88421113","ClientId":"mvc client","RedirectUri":"http://localhost:7003/signin-oidc","State":"CfDJ8LW6UIEwqIdElv_5QOMpHlvFD5L2Fok9ek14Nrri8HpGtYSh-vxKpp8-5eZK3mtdmBijbidwrFRrgRwRAPJNkjzpyaIGOrda7hreVAOoHGAh-VdgrBexKvewH5myijLyFuUdyV6jqdP2S--6_7zw_WbHjfGDkwBlixvFvel-A1vtz5QwLIOF3GVfbIGw-IKpg5OXgDs551v4c2QqqBcBthFSZvADv8eisgGEXRwC-m-Qcg1r1aPyFkC18I0sFHRmJc_JRcs0yZMNEzL0GX_NbUOsNkOmzcStwnAGb-22_E-ZrVJoIXVcGA-vA6jdSFunxw","Scope":"openid profile email phone address api1 offline_access","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-02-22 13:28:22.315 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 13:28:22.316 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 13:28:22.535 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-02-22 13:28:22.539 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-02-22 13:28:22.539 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-02-22 13:28:22.544 +08:00 [DBG] Start token request.
+2019-02-22 13:28:22.548 +08:00 [DBG] Start client validation
+2019-02-22 13:28:22.552 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 13:28:22.555 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 13:28:22.555 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 13:28:22.555 +08:00 [DBG] Secret id found: mvc client
+2019-02-22 13:28:22.555 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:22.575 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 13:28:22.576 +08:00 [DBG] Client validation success
+2019-02-22 13:28:22.576 +08:00 [INF] {"ClientId":"mvc client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLKOGQ6794I0:00000001","TimeStamp":"2019-02-22T05:28:22.0000000Z","ProcessId":8696,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-02-22 13:28:22.579 +08:00 [DBG] Start token request validation
+2019-02-22 13:28:22.587 +08:00 [DBG] Start validation of authorization code token request
+2019-02-22 13:28:22.599 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-02-22 13:28:22.599 +08:00 [DBG] Validation of authorization code token request success
+2019-02-22 13:28:22.601 +08:00 [INF] Token request validation success
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"d6bd5382ceee55fbf228f62da5121ca0c230ee672ba41ed8b8ddac42da3738a5","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"mvc client","client_secret":"***REDACTED***","code":"d6bd5382ceee55fbf228f62da5121ca0c230ee672ba41ed8b8ddac42da3738a5","grant_type":"authorization_code","redirect_uri":"http://localhost:7003/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-02-22 13:28:22.609 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:22.618 +08:00 [DBG] Getting claims for access token for client: mvc client
+2019-02-22 13:28:22.618 +08:00 [DBG] Getting claims for access token for subject: 88421113
+2019-02-22 13:28:22.621 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["location"] via ClaimsProviderAccessToken
+2019-02-22 13:28:22.622 +08:00 [DBG] Issued claims: ["location"]
+2019-02-22 13:28:22.720 +08:00 [DBG] Creating refresh token
+2019-02-22 13:28:22.720 +08:00 [DBG] Setting an absolute lifetime: 2592000
+2019-02-22 13:28:22.738 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:28:22.744 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: mvc client
+2019-02-22 13:28:22.744 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","phone_number","phone_number_verified","email","email_verified"] via ClaimsProviderIdentityToken
+2019-02-22 13:28:22.745 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-02-22 13:28:22.751 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile email phone address api1 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****JMEQ","$type":"Token"},{"TokenType":"refresh_token","TokenValue":"****112a","$type":"Token"},{"TokenType":"access_token","TokenValue":"****T_WQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOGQ6794I0:00000001","TimeStamp":"2019-02-22T05:28:22.0000000Z","ProcessId":8696,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 13:28:22.752 +08:00 [DBG] Token request success.
+2019-02-22 13:28:23.265 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:28:23.265 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:28:23.265 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:28:23.268 +08:00 [DBG] Start discovery request
+2019-02-22 13:28:23.332 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:28:23.333 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:28:23.333 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:28:23.336 +08:00 [DBG] Start key discovery request
+2019-02-22 13:28:23.530 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:28:23.531 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:28:23.531 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:28:23.531 +08:00 [DBG] Start discovery request
+2019-02-22 13:28:23.592 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:28:23.592 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:28:23.592 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:28:23.592 +08:00 [DBG] Start key discovery request
+2019-02-22 13:28:47.296 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:28:47.296 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:28:47.296 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:28:47.296 +08:00 [DBG] Start discovery request
+2019-02-22 13:28:47.337 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:28:47.337 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:28:47.337 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:28:47.337 +08:00 [DBG] Start key discovery request
+2019-02-22 13:29:11.233 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:29:11.233 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:29:11.233 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:29:11.233 +08:00 [DBG] Start key discovery request
+2019-02-22 13:34:10.450 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:34:10.450 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:34:10.450 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:34:10.450 +08:00 [DBG] Start discovery request
+2019-02-22 13:34:10.508 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:34:10.508 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:34:10.508 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:34:10.508 +08:00 [DBG] Start key discovery request
+2019-02-22 13:35:18.632 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:35:18.632 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:35:18.632 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:35:18.632 +08:00 [DBG] Start discovery request
+2019-02-22 13:35:18.829 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:35:18.829 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:35:18.829 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:35:18.829 +08:00 [DBG] Start key discovery request
+2019-02-22 13:35:19.216 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:35:19.217 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:35:19.217 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:35:19.217 +08:00 [DBG] Start discovery request
+2019-02-22 13:35:19.251 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:35:19.251 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:35:19.251 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:35:19.251 +08:00 [DBG] Start key discovery request
+2019-02-22 13:35:19.342 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-02-22 13:35:19.342 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-02-22 13:35:19.342 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-02-22 13:35:19.342 +08:00 [DBG] Start token request.
+2019-02-22 13:35:19.342 +08:00 [DBG] Start client validation
+2019-02-22 13:35:19.342 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 13:35:19.342 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 13:35:19.342 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 13:35:19.343 +08:00 [DBG] Secret id found: mvc client
+2019-02-22 13:35:19.343 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:35:19.343 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 13:35:19.343 +08:00 [DBG] Client validation success
+2019-02-22 13:35:19.343 +08:00 [INF] {"ClientId":"mvc client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLKOGQ6794I7:00000003","TimeStamp":"2019-02-22T05:35:19.0000000Z","ProcessId":8696,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-02-22 13:35:19.343 +08:00 [DBG] Start token request validation
+2019-02-22 13:35:19.345 +08:00 [DBG] Start validation of refresh token request
+2019-02-22 13:35:19.381 +08:00 [DBG] IsActive called from: RefreshTokenValidation
+2019-02-22 13:35:19.384 +08:00 [DBG] Token validation success
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"sub":"88421113","client_id":"mvc client","scope":["openid","profile","address","phone","email","api1","offline_access"],"auth_time":1550813302,"idp":"local","amr":"pwd","location":"somewhere"},"$type":"TokenValidationLog"}
+2019-02-22 13:35:19.385 +08:00 [DBG] Validation of refresh token request success
+2019-02-22 13:35:19.385 +08:00 [INF] Token request validation success
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","GrantType":"refresh_token","Scopes":null,"AuthorizationCode":null,"RefreshToken":"670885e5c664bd4aaea8b9808a246923789b7c57197ce7e83b39cb33e660112a","UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"refresh_token","refresh_token":"***REDACTED***","scope":"api1 openid profile email phone address","client_id":"mvc client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-02-22 13:35:19.395 +08:00 [DBG] Updating refresh token
+2019-02-22 13:35:19.395 +08:00 [DBG] Token usage is one-time only. Generating new handle
+2019-02-22 13:35:19.401 +08:00 [DBG] Created refresh token in store
+2019-02-22 13:35:19.410 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: mvc client
+2019-02-22 13:35:19.410 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","phone_number","phone_number_verified","email","email_verified"] via ClaimsProviderIdentityToken
+2019-02-22 13:35:19.410 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-02-22 13:35:19.413 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":null,"Endpoint":"Token","SubjectId":"88421113","Scopes":"openid profile address phone email api1 offline_access","GrantType":"refresh_token","Tokens":[{"TokenType":"id_token","TokenValue":"****mVNw","$type":"Token"},{"TokenType":"refresh_token","TokenValue":"****9014","$type":"Token"},{"TokenType":"access_token","TokenValue":"****_ChQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOGQ6794I7:00000003","TimeStamp":"2019-02-22T05:35:19.0000000Z","ProcessId":8696,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 13:35:19.413 +08:00 [DBG] Token request success.
+2019-02-22 13:35:19.602 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:35:19.602 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:35:19.602 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:35:19.602 +08:00 [DBG] Start discovery request
+2019-02-22 13:35:19.635 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:35:19.635 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:35:19.635 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:35:19.635 +08:00 [DBG] Start key discovery request
+2019-02-22 13:35:47.335 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:35:47.335 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:35:47.335 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:35:47.335 +08:00 [DBG] Start discovery request
+2019-02-22 13:35:47.368 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:35:47.368 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:35:47.368 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:35:47.368 +08:00 [DBG] Start key discovery request
+2019-02-22 13:37:02.340 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:37:02.340 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:37:02.340 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:37:02.340 +08:00 [DBG] Start key discovery request
+2019-02-22 13:38:05.314 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:38:05.315 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:38:05.315 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:38:05.315 +08:00 [DBG] Start discovery request
+2019-02-22 13:38:05.388 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:38:05.388 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:38:05.388 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:38:05.388 +08:00 [DBG] Start key discovery request
+2019-02-22 13:38:35.445 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:38:35.445 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:38:35.445 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:38:35.445 +08:00 [DBG] Start key discovery request
+2019-02-22 13:39:22.656 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:39:22.656 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:39:22.656 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:39:22.656 +08:00 [DBG] Start discovery request
+2019-02-22 13:39:22.730 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:39:22.730 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:39:22.730 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:39:22.730 +08:00 [DBG] Start key discovery request
+2019-02-22 13:46:13.326 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-02-22 13:46:13.357 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-02-22 13:46:13.362 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-02-22 13:46:13.365 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-02-22 13:46:13.367 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-02-22 13:46:13.372 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-02-22 13:46:13.375 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-02-22 13:46:42.587 +08:00 [DBG] Login Url: /Account/Login
+2019-02-22 13:46:42.591 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 13:46:42.593 +08:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 13:46:42.595 +08:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 13:46:42.597 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 13:46:42.599 +08:00 [DBG] Error Url: /home/error
+2019-02-22 13:46:42.601 +08:00 [DBG] Error Id Parameter: errorId
+2019-02-22 13:46:42.620 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:46:42.625 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:46:42.628 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:46:42.632 +08:00 [DBG] Start discovery request
+2019-02-22 13:46:42.733 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:46:42.737 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:46:42.741 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:46:42.746 +08:00 [DBG] Start key discovery request
+2019-02-22 13:46:42.807 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 13:46:42.813 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 13:46:42.815 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 13:46:42.820 +08:00 [DBG] Start authorize request
+2019-02-22 13:46:42.829 +08:00 [DBG] No user present in authorize request
+2019-02-22 13:46:42.835 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:46:42.849 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:46:42.856 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:46:42.859 +08:00 [DBG] No PKCE used.
+2019-02-22 13:46:42.878 +08:00 [ERR] Requested scope not allowed: api2
+2019-02-22 13:46:42.883 +08:00 [ERR] Request validation failed
+2019-02-22 13:46:42.894 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7003/signin-oidc","AllowedRedirectUris":["http://localhost:7003/signin-oidc"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"form_post","GrantType":"authorization_code","RequestedScopes":"api1 api2 openid profile email phone address offline_access","State":"CfDJ8LW6UIEwqIdElv_5QOMpHlvVEjGVIb5LvIUa_PgKLsTx80cV3kpI3lmffOeXg4bHR9DkLTki_VsIEM2iKJrIAxRCe8jvuiVWuD2qvF1GC7j_8ocnJfmZwjnZenoJYvLms4uiTjKKsp35Jr4HxOqZRd_hIMIzkKVhTpyCxEubbV8OVXIPi6ybC96ejDg3vnu0iOhOtN0_w6hcGnDPKJhMOgM6tlZz3tat1UiCCuuraT5OzQoWaVEvwvzeiShLv28qFxmMZ8Kzw5YDhwRQPJkbNRS0N96tQ-Y_YNjYmU7DMt9AOIFyyl5sHRIa5MyndaXgMw","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7003/signin-oidc","response_type":"code","scope":"api1 api2 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864112027692893.MDlhZTRkMWEtN2FjYi00Mzc4LTg1ZDMtNGYzODBkZDRiMGIyNGViYzBkOGQtMzhhNi00NjdiLTk2ZDctZWI4YmI1NGJkZWU1","state":"CfDJ8LW6UIEwqIdElv_5QOMpHlvVEjGVIb5LvIUa_PgKLsTx80cV3kpI3lmffOeXg4bHR9DkLTki_VsIEM2iKJrIAxRCe8jvuiVWuD2qvF1GC7j_8ocnJfmZwjnZenoJYvLms4uiTjKKsp35Jr4HxOqZRd_hIMIzkKVhTpyCxEubbV8OVXIPi6ybC96ejDg3vnu0iOhOtN0_w6hcGnDPKJhMOgM6tlZz3tat1UiCCuuraT5OzQoWaVEvwvzeiShLv28qFxmMZ8Kzw5YDhwRQPJkbNRS0N96tQ-Y_YNjYmU7DMt9AOIFyyl5sHRIa5MyndaXgMw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 13:46:42.985 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7003/signin-oidc","Endpoint":"Authorize","SubjectId":null,"Scopes":"api1 api2 openid profile email phone address offline_access","GrantType":"authorization_code","Error":"unauthorized_client","ErrorDescription":"Invalid scope for client","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLKOH4FMQU5R:00000001","TimeStamp":"2019-02-22T05:46:42.0000000Z","ProcessId":16340,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-02-22 13:48:07.051 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-02-22 13:48:07.078 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-02-22 13:48:07.083 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-02-22 13:48:07.086 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-02-22 13:48:07.088 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-02-22 13:48:07.089 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-02-22 13:48:07.091 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-02-22 13:48:58.903 +08:00 [DBG] Login Url: /Account/Login
+2019-02-22 13:48:58.907 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 13:48:58.909 +08:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 13:48:58.911 +08:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 13:48:58.913 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 13:48:58.915 +08:00 [DBG] Error Url: /home/error
+2019-02-22 13:48:58.916 +08:00 [DBG] Error Id Parameter: errorId
+2019-02-22 13:48:58.934 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:48:58.939 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:48:58.941 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:48:58.947 +08:00 [DBG] Start discovery request
+2019-02-22 13:48:59.032 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:48:59.036 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:48:59.039 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:48:59.044 +08:00 [DBG] Start key discovery request
+2019-02-22 13:48:59.089 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 13:48:59.094 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 13:48:59.096 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 13:48:59.100 +08:00 [DBG] Start authorize request
+2019-02-22 13:48:59.109 +08:00 [DBG] No user present in authorize request
+2019-02-22 13:48:59.115 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:48:59.128 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:48:59.136 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:48:59.139 +08:00 [DBG] No PKCE used.
+2019-02-22 13:48:59.160 +08:00 [ERR] Requested scope not allowed: api2
+2019-02-22 13:48:59.165 +08:00 [ERR] Request validation failed
+2019-02-22 13:48:59.176 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","AllowedRedirectUris":["http://localhost:7001/signin-oidc"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"form_post","GrantType":"authorization_code","RequestedScopes":"api1 api2 openid profile email phone address offline_access","State":"CfDJ8LW6UIEwqIdElv_5QOMpHlssQHI6ALqO2sLvRWtSQqMTg6UT8Un3VZls4ROzIWQ1OgghbSyzTkiR23igtrfW3q4tuOWcfiecClbUoqZaCKrsIdTlrzXEb7n92paLcr0DSIyHAFKfAW8wo-K_N5t2GDUW4snIbnXW2I7jdF6dAdUowM56MnGwqwnhAKlP8gMNaKOAy4_ULG-WlwaXCf_1GoEzJXA7amEmKOc6h9RqDjynGEeOkDC_0xqhSXne9SassYcLD4v4JApVHmC4pOkg4jYnH-nfHI6OaSjxMoa2Bc_ggw4utwwBYFX_t6ONlri5ag","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7001/signin-oidc","response_type":"code","scope":"api1 api2 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864113390659754.YzVmNzAyMzktYjcxNi00NmRiLTliZGItMmMzNzY4MmFmZTA4MmVhMDdlMzgtNGI3YS00MGQ3LWIwYzItMWJmMWY3OWRkNWFh","state":"CfDJ8LW6UIEwqIdElv_5QOMpHlssQHI6ALqO2sLvRWtSQqMTg6UT8Un3VZls4ROzIWQ1OgghbSyzTkiR23igtrfW3q4tuOWcfiecClbUoqZaCKrsIdTlrzXEb7n92paLcr0DSIyHAFKfAW8wo-K_N5t2GDUW4snIbnXW2I7jdF6dAdUowM56MnGwqwnhAKlP8gMNaKOAy4_ULG-WlwaXCf_1GoEzJXA7amEmKOc6h9RqDjynGEeOkDC_0xqhSXne9SassYcLD4v4JApVHmC4pOkg4jYnH-nfHI6OaSjxMoa2Bc_ggw4utwwBYFX_t6ONlri5ag","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 13:48:59.211 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","Endpoint":"Authorize","SubjectId":null,"Scopes":"api1 api2 openid profile email phone address offline_access","GrantType":"authorization_code","Error":"unauthorized_client","ErrorDescription":"Invalid scope for client","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLKOH5NRQL7D:00000001","TimeStamp":"2019-02-22T05:48:59.0000000Z","ProcessId":8232,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-02-22 13:51:14.052 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-02-22 13:51:14.083 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-02-22 13:51:14.088 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-02-22 13:51:14.090 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-02-22 13:51:14.092 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-02-22 13:51:14.093 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-02-22 13:51:14.095 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-02-22 13:51:28.835 +08:00 [DBG] Login Url: /Account/Login
+2019-02-22 13:51:28.841 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 13:51:28.842 +08:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 13:51:28.844 +08:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 13:51:28.845 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 13:51:28.847 +08:00 [DBG] Error Url: /home/error
+2019-02-22 13:51:28.849 +08:00 [DBG] Error Id Parameter: errorId
+2019-02-22 13:51:28.866 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 13:51:28.871 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 13:51:28.875 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 13:51:28.880 +08:00 [DBG] Start authorize request
+2019-02-22 13:51:28.890 +08:00 [DBG] No user present in authorize request
+2019-02-22 13:51:28.895 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:51:28.909 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:28.915 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:51:28.918 +08:00 [DBG] No PKCE used.
+2019-02-22 13:51:28.956 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 13:51:28.968 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","AllowedRedirectUris":["http://localhost:7001/signin-oidc"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"form_post","GrantType":"authorization_code","RequestedScopes":"api1 api2 openid profile email phone address offline_access","State":"CfDJ8LW6UIEwqIdElv_5QOMpHlub38jQ_NpshksFCkO14uyjOdHhKixORB3TejoUUWO7cg2iJOu7WWnkzHPXBD65E4ve-Cjhp6ClGqdY-UixvaCcOzv6Tw_pJpnaWAFur1MhS450beZFP7t64K8T48d0ivNpNFAUDSeCLo4-bjuTzKc8fwTuCr_IcE07RI-BG-X-BEJJgkEj-syqo_ibdNkSeQqxggy7VGOfiHFnkY8wThq4Obk_ScPqQxlNxaumiXJzc9AIhhfXPT61Yx209STW3Xyf9li-mOPCtpalet03q8QeFkfHJ4DKmsFjiGPN1MWkmQ","UiLocales":null,"Nonce":"636864114887628031.ZjQxNjU1ZjctMTZmNi00MTk3LThkMjYtNTlkYmNjY2ViYjc1YmQ2YzNkM2UtMjZlMi00MjVhLTk1MjUtYzYzYzJiMmNlMGE5","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7001/signin-oidc","response_type":"code","scope":"api1 api2 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864114887628031.ZjQxNjU1ZjctMTZmNi00MTk3LThkMjYtNTlkYmNjY2ViYjc1YmQ2YzNkM2UtMjZlMi00MjVhLTk1MjUtYzYzYzJiMmNlMGE5","state":"CfDJ8LW6UIEwqIdElv_5QOMpHlub38jQ_NpshksFCkO14uyjOdHhKixORB3TejoUUWO7cg2iJOu7WWnkzHPXBD65E4ve-Cjhp6ClGqdY-UixvaCcOzv6Tw_pJpnaWAFur1MhS450beZFP7t64K8T48d0ivNpNFAUDSeCLo4-bjuTzKc8fwTuCr_IcE07RI-BG-X-BEJJgkEj-syqo_ibdNkSeQqxggy7VGOfiHFnkY8wThq4Obk_ScPqQxlNxaumiXJzc9AIhhfXPT61Yx209STW3Xyf9li-mOPCtpalet03q8QeFkfHJ4DKmsFjiGPN1MWkmQ","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 13:51:29.003 +08:00 [INF] Showing login: User is not authenticated
+2019-02-22 13:51:29.125 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:51:29.129 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:29.131 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:51:29.133 +08:00 [DBG] No PKCE used.
+2019-02-22 13:51:29.135 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 13:51:29.138 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:31.900 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-22 13:51:31.930 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:51:31.932 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:31.934 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:51:31.937 +08:00 [DBG] No PKCE used.
+2019-02-22 13:51:31.939 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 13:51:31.948 +08:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"88421113","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKOH734C1MC:00000003","TimeStamp":"2019-02-22T05:51:31.0000000Z","ProcessId":7700,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-22 13:51:31.973 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 13:51:31.977 +08:00 [DBG] Adding idp claim with value: local
+2019-02-22 13:51:31.979 +08:00 [DBG] Adding amr claim with value: pwd
+2019-02-22 13:51:31.988 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 13:51:31.992 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:31.997 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-02-22 13:51:32.000 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-02-22 13:51:32.002 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-02-22 13:51:32.007 +08:00 [DBG] Start authorize callback request
+2019-02-22 13:51:32.012 +08:00 [DBG] User in authorize request: 88421113
+2019-02-22 13:51:32.014 +08:00 [DBG] Start authorize request protocol validation
+2019-02-22 13:51:32.016 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:32.018 +08:00 [DBG] Checking for PKCE parameters
+2019-02-22 13:51:32.020 +08:00 [DBG] No PKCE used.
+2019-02-22 13:51:32.022 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-02-22 13:51:32.024 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","AllowedRedirectUris":["http://localhost:7001/signin-oidc"],"SubjectId":"88421113","ResponseType":"code","ResponseMode":"form_post","GrantType":"authorization_code","RequestedScopes":"api1 api2 openid profile email phone address offline_access","State":"CfDJ8LW6UIEwqIdElv_5QOMpHlub38jQ_NpshksFCkO14uyjOdHhKixORB3TejoUUWO7cg2iJOu7WWnkzHPXBD65E4ve-Cjhp6ClGqdY-UixvaCcOzv6Tw_pJpnaWAFur1MhS450beZFP7t64K8T48d0ivNpNFAUDSeCLo4-bjuTzKc8fwTuCr_IcE07RI-BG-X-BEJJgkEj-syqo_ibdNkSeQqxggy7VGOfiHFnkY8wThq4Obk_ScPqQxlNxaumiXJzc9AIhhfXPT61Yx209STW3Xyf9li-mOPCtpalet03q8QeFkfHJ4DKmsFjiGPN1MWkmQ","UiLocales":null,"Nonce":"636864114887628031.ZjQxNjU1ZjctMTZmNi00MTk3LThkMjYtNTlkYmNjY2ViYjc1YmQ2YzNkM2UtMjZlMi00MjVhLTk1MjUtYzYzYzJiMmNlMGE5","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"6a2664e1a0e6be09e9ce66407eb7de06","Raw":{"client_id":"mvc client","redirect_uri":"http://localhost:7001/signin-oidc","response_type":"code","scope":"api1 api2 openid profile email phone address offline_access","response_mode":"form_post","nonce":"636864114887628031.ZjQxNjU1ZjctMTZmNi00MTk3LThkMjYtNTlkYmNjY2ViYjc1YmQ2YzNkM2UtMjZlMi00MjVhLTk1MjUtYzYzYzJiMmNlMGE5","state":"CfDJ8LW6UIEwqIdElv_5QOMpHlub38jQ_NpshksFCkO14uyjOdHhKixORB3TejoUUWO7cg2iJOu7WWnkzHPXBD65E4ve-Cjhp6ClGqdY-UixvaCcOzv6Tw_pJpnaWAFur1MhS450beZFP7t64K8T48d0ivNpNFAUDSeCLo4-bjuTzKc8fwTuCr_IcE07RI-BG-X-BEJJgkEj-syqo_ibdNkSeQqxggy7VGOfiHFnkY8wThq4Obk_ScPqQxlNxaumiXJzc9AIhhfXPT61Yx209STW3Xyf9li-mOPCtpalet03q8QeFkfHJ4DKmsFjiGPN1MWkmQ","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 13:51:32.044 +08:00 [DBG] IsActive called from: AuthorizeEndpoint
+2019-02-22 13:51:32.052 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2019-02-22 13:51:32.058 +08:00 [DBG] Creating Authorization Code Flow response.
+2019-02-22 13:51:32.080 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":"http://localhost:7001/signin-oidc","Endpoint":"Authorize","SubjectId":"88421113","Scopes":"openid profile email phone address api1 api2 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"code","TokenValue":"****e28b","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOH734C1MC:00000004","TimeStamp":"2019-02-22T05:51:32.0000000Z","ProcessId":7700,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 13:51:32.097 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"88421113","ClientId":"mvc client","RedirectUri":"http://localhost:7001/signin-oidc","State":"CfDJ8LW6UIEwqIdElv_5QOMpHlub38jQ_NpshksFCkO14uyjOdHhKixORB3TejoUUWO7cg2iJOu7WWnkzHPXBD65E4ve-Cjhp6ClGqdY-UixvaCcOzv6Tw_pJpnaWAFur1MhS450beZFP7t64K8T48d0ivNpNFAUDSeCLo4-bjuTzKc8fwTuCr_IcE07RI-BG-X-BEJJgkEj-syqo_ibdNkSeQqxggy7VGOfiHFnkY8wThq4Obk_ScPqQxlNxaumiXJzc9AIhhfXPT61Yx209STW3Xyf9li-mOPCtpalet03q8QeFkfHJ4DKmsFjiGPN1MWkmQ","Scope":"openid profile email phone address api1 api2 offline_access","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-02-22 13:51:32.116 +08:00 [DBG] Augmenting SignInContext
+2019-02-22 13:51:32.119 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-02-22 13:51:32.180 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-02-22 13:51:32.185 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-02-22 13:51:32.187 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-02-22 13:51:32.204 +08:00 [DBG] Start token request.
+2019-02-22 13:51:32.211 +08:00 [DBG] Start client validation
+2019-02-22 13:51:32.216 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-02-22 13:51:32.220 +08:00 [DBG] Start parsing for secret in post body
+2019-02-22 13:51:32.222 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-02-22 13:51:32.223 +08:00 [DBG] Secret id found: mvc client
+2019-02-22 13:51:32.226 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:32.233 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-02-22 13:51:32.235 +08:00 [DBG] Client validation success
+2019-02-22 13:51:32.237 +08:00 [INF] {"ClientId":"mvc client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLKOH734C1ME:00000001","TimeStamp":"2019-02-22T05:51:32.0000000Z","ProcessId":7700,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-02-22 13:51:32.249 +08:00 [DBG] Start token request validation
+2019-02-22 13:51:32.258 +08:00 [DBG] Start validation of authorization code token request
+2019-02-22 13:51:32.271 +08:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2019-02-22 13:51:32.274 +08:00 [DBG] Validation of authorization code token request success
+2019-02-22 13:51:32.279 +08:00 [INF] Token request validation success
+{"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"be82e0dbad63eb7ea3756b58ae4422c36dd1bcf719bc9c99a263d5917fcce28b","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"mvc client","client_secret":"***REDACTED***","code":"be82e0dbad63eb7ea3756b58ae4422c36dd1bcf719bc9c99a263d5917fcce28b","grant_type":"authorization_code","redirect_uri":"http://localhost:7001/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-02-22 13:51:32.300 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:32.310 +08:00 [DBG] Getting claims for access token for client: mvc client
+2019-02-22 13:51:32.313 +08:00 [DBG] Getting claims for access token for subject: 88421113
+2019-02-22 13:51:32.318 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["location"] via ClaimsProviderAccessToken
+2019-02-22 13:51:32.323 +08:00 [DBG] Issued claims: ["location"]
+2019-02-22 13:51:32.398 +08:00 [DBG] Creating refresh token
+2019-02-22 13:51:32.399 +08:00 [DBG] Setting an absolute lifetime: 2592000
+2019-02-22 13:51:32.410 +08:00 [DBG] client configuration validation for client mvc client succeeded.
+2019-02-22 13:51:32.418 +08:00 [DBG] Getting claims for identity token for subject: 88421113 and client: mvc client
+2019-02-22 13:51:32.422 +08:00 [DBG] Get profile called for subject 88421113 from client ASP.NET Core MVC Client with claim types ["name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","address","phone_number","phone_number_verified","email","email_verified"] via ClaimsProviderIdentityToken
+2019-02-22 13:51:32.432 +08:00 [DBG] Issued claims: ["name","given_name","family_name","email","email_verified","website","address"]
+2019-02-22 13:51:32.442 +08:00 [INF] {"ClientId":"mvc client","ClientName":"ASP.NET Core MVC Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile email phone address api1 api2 offline_access","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****b7-Q","$type":"Token"},{"TokenType":"refresh_token","TokenValue":"****84d0","$type":"Token"},{"TokenType":"access_token","TokenValue":"****P46Q","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLKOH734C1ME:00000001","TimeStamp":"2019-02-22T05:51:32.0000000Z","ProcessId":7700,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-02-22 13:51:32.461 +08:00 [DBG] Token request success.
+2019-02-22 13:51:32.664 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:51:32.668 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:51:32.670 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:51:32.674 +08:00 [DBG] Start discovery request
+2019-02-22 13:51:32.694 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:51:32.697 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:51:32.699 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:51:32.703 +08:00 [DBG] Start key discovery request
+2019-02-22 13:51:32.841 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:51:32.844 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:51:32.846 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:51:32.850 +08:00 [DBG] Start discovery request
+2019-02-22 13:51:32.906 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:51:32.909 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:51:32.913 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:51:32.916 +08:00 [DBG] Start key discovery request
+2019-02-22 13:51:34.683 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:51:34.687 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:51:34.690 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:51:34.693 +08:00 [DBG] Start key discovery request
+2019-02-22 13:54:03.070 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:54:03.073 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:54:03.075 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:54:03.077 +08:00 [DBG] Start discovery request
+2019-02-22 13:54:03.137 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:54:03.140 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:54:03.142 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:54:03.144 +08:00 [DBG] Start key discovery request
+2019-02-22 13:55:31.571 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:55:31.574 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:55:31.577 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:55:31.580 +08:00 [DBG] Start discovery request
+2019-02-22 13:55:31.588 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:55:31.591 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:55:31.594 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:55:31.596 +08:00 [DBG] Start key discovery request
+2019-02-22 13:55:54.562 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:55:54.565 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:55:54.568 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:55:54.570 +08:00 [DBG] Start key discovery request
+2019-02-22 13:56:08.494 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-02-22 13:56:08.524 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-02-22 13:56:08.529 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-02-22 13:56:08.531 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-02-22 13:56:08.533 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-02-22 13:56:08.535 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-02-22 13:56:08.537 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-02-22 13:56:32.546 +08:00 [DBG] Login Url: /Account/Login
+2019-02-22 13:56:32.551 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 13:56:32.553 +08:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 13:56:32.555 +08:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 13:56:32.557 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 13:56:32.560 +08:00 [DBG] Error Url: /home/error
+2019-02-22 13:56:32.562 +08:00 [DBG] Error Id Parameter: errorId
+2019-02-22 13:56:32.578 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 13:56:32.584 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 13:56:32.587 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 13:56:32.591 +08:00 [DBG] Start discovery request
+2019-02-22 13:56:32.631 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:56:32.635 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:56:32.637 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:56:32.642 +08:00 [DBG] Start key discovery request
+2019-02-22 13:57:03.864 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 13:57:03.867 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 13:57:03.870 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 13:57:03.872 +08:00 [DBG] Start key discovery request

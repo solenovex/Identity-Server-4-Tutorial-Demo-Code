@@ -32,7 +32,8 @@ namespace Idp
                 new ApiResource("api1", "My API #1", new List<string> { "location" })
                 {
                     ApiSecrets = { new Secret("api1 secret".Sha256()) }
-                }
+                },
+                new ApiResource("api2", "Express API")
             };
         }
 
@@ -50,7 +51,7 @@ namespace Idp
 
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = { "api1", "api2" }
                 },
 
                 // wpf client, password grant
@@ -64,6 +65,7 @@ namespace Idp
                     },
                     AllowedScopes = {
                         "api1",
+                        "api2",
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.Address,
@@ -80,10 +82,10 @@ namespace Idp
                     AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
                     ClientSecrets = { new Secret("mvc secret".Sha256()) },
 
-                    RedirectUris = { "http://localhost:5002/signin-oidc" },
+                    RedirectUris = { "http://localhost:7001/signin-oidc" },
 
-                    FrontChannelLogoutUri = "http://localhost:5002/signout-oidc",
-                    PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
+                    FrontChannelLogoutUri = "http://localhost:7001/signout-oidc",
+                    PostLogoutRedirectUris = { "http://localhost:7001/signout-callback-oidc" },
 
                     AlwaysIncludeUserClaimsInIdToken = true,
                     RequireConsent = false,
@@ -93,6 +95,7 @@ namespace Idp
                     AllowedScopes =
                     {
                         "api1",
+                        "api2",
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.Address,
@@ -131,6 +134,7 @@ namespace Idp
 
                     AllowedScopes = {
                         "api1",
+                        "api2",
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.Address,
@@ -192,10 +196,11 @@ namespace Idp
                     AllowOfflineAccess = true,
 
                     RedirectUris = { "http://localhost:7002/oidc_callback" },
-                    
+
                     AllowedScopes =
                     {
                         "api1",
+                        "api2",
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.Profile
