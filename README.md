@@ -1,4 +1,4 @@
-# Identity Server 4 视频教程配套源码（持续更新中...)
+# Identity Server 4 视频教程配套源码
 视频教程地址：https://www.bilibili.com/video/av42364337/  
 视频教程大纲：  
 
@@ -14,4 +14,4 @@
 6. Implicit Flow 实例
 7. Hybrid Flow 实例，Claims映射，基于角色的授权和基于策略的授权
 8. Refrence Token，撤销Tokens，Google和Github登录
-9. 单点登录实例（跨技术栈Python Flask，Nodejs Express之类的...明天再说...不一定会写）
+9. 单点登录实例（添加Python Flask客户端，Express.js的API资源）
